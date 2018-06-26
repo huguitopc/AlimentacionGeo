@@ -1,0 +1,143 @@
+D:\UPDS\Modalidad de Grado I\Proyecto\MG1.Comedor.Presentacion\MG1.Comedor.Presentacion\bin\Debug\MG1.Comedor.Presentacion.exe.config
+D:\UPDS\Modalidad de Grado I\Proyecto\MG1.Comedor.Presentacion\MG1.Comedor.Presentacion\bin\Debug\MG1.Comedor.Presentacion.exe
+D:\UPDS\Modalidad de Grado I\Proyecto\MG1.Comedor.Presentacion\MG1.Comedor.Presentacion\bin\Debug\MG1.Comedor.Presentacion.pdb
+D:\UPDS\Modalidad de Grado I\Proyecto\MG1.Comedor.Presentacion\MG1.Comedor.Presentacion\bin\Debug\EntityFramework.dll
+D:\UPDS\Modalidad de Grado I\Proyecto\MG1.Comedor.Presentacion\MG1.Comedor.Presentacion\bin\Debug\MG1.ComedorGeo.Datos.dll
+D:\UPDS\Modalidad de Grado I\Proyecto\MG1.Comedor.Presentacion\MG1.Comedor.Presentacion\bin\Debug\MG1.ComedorGeo.Negocio.dll
+D:\UPDS\Modalidad de Grado I\Proyecto\MG1.Comedor.Presentacion\MG1.Comedor.Presentacion\bin\Debug\MG1.ComedorGeo.Utilitarios.dll
+D:\UPDS\Modalidad de Grado I\Proyecto\MG1.Comedor.Presentacion\MG1.Comedor.Presentacion\bin\Debug\Microsoft.ReportViewer.WinForms.dll
+D:\UPDS\Modalidad de Grado I\Proyecto\MG1.Comedor.Presentacion\MG1.Comedor.Presentacion\bin\Debug\Microsoft.SqlServer.Types.dll
+D:\UPDS\Modalidad de Grado I\Proyecto\MG1.Comedor.Presentacion\MG1.Comedor.Presentacion\bin\Debug\MG1.ComedorGeo.Datos.pdb
+D:\UPDS\Modalidad de Grado I\Proyecto\MG1.Comedor.Presentacion\MG1.Comedor.Presentacion\bin\Debug\MG1.ComedorGeo.Negocio.pdb
+D:\UPDS\Modalidad de Grado I\Proyecto\MG1.Comedor.Presentacion\MG1.Comedor.Presentacion\bin\Debug\MG1.ComedorGeo.Utilitarios.pdb
+D:\UPDS\Modalidad de Grado I\Proyecto\MG1.Comedor.Presentacion\MG1.Comedor.Presentacion\bin\Debug\EntityFramework.xml
+D:\UPDS\Modalidad de Grado I\Proyecto\MG1.Comedor.Presentacion\MG1.Comedor.Presentacion\bin\Debug\es\Microsoft.ReportViewer.WinForms.resources.dll
+D:\UPDS\Modalidad de Grado I\Proyecto\MG1.Comedor.Presentacion\MG1.Comedor.Presentacion\bin\Debug\de\Microsoft.SqlServer.Types.resources.dll
+D:\UPDS\Modalidad de Grado I\Proyecto\MG1.Comedor.Presentacion\MG1.Comedor.Presentacion\bin\Debug\es\Microsoft.SqlServer.Types.resources.dll
+D:\UPDS\Modalidad de Grado I\Proyecto\MG1.Comedor.Presentacion\MG1.Comedor.Presentacion\bin\Debug\fr\Microsoft.SqlServer.Types.resources.dll
+D:\UPDS\Modalidad de Grado I\Proyecto\MG1.Comedor.Presentacion\MG1.Comedor.Presentacion\bin\Debug\it\Microsoft.SqlServer.Types.resources.dll
+D:\UPDS\Modalidad de Grado I\Proyecto\MG1.Comedor.Presentacion\MG1.Comedor.Presentacion\bin\Debug\ja\Microsoft.SqlServer.Types.resources.dll
+D:\UPDS\Modalidad de Grado I\Proyecto\MG1.Comedor.Presentacion\MG1.Comedor.Presentacion\bin\Debug\ko\Microsoft.SqlServer.Types.resources.dll
+D:\UPDS\Modalidad de Grado I\Proyecto\MG1.Comedor.Presentacion\MG1.Comedor.Presentacion\bin\Debug\pt\Microsoft.SqlServer.Types.resources.dll
+D:\UPDS\Modalidad de Grado I\Proyecto\MG1.Comedor.Presentacion\MG1.Comedor.Presentacion\bin\Debug\ru\Microsoft.SqlServer.Types.resources.dll
+D:\UPDS\Modalidad de Grado I\Proyecto\MG1.Comedor.Presentacion\MG1.Comedor.Presentacion\bin\Debug\zh-Hans\Microsoft.SqlServer.Types.resources.dll
+D:\UPDS\Modalidad de Grado I\Proyecto\MG1.Comedor.Presentacion\MG1.Comedor.Presentacion\bin\Debug\zh-Hant\Microsoft.SqlServer.Types.resources.dll
+D:\UPDS\Modalidad de Grado I\Proyecto\MG1.Comedor.Presentacion\MG1.Comedor.Presentacion\obj\Debug\MG1.Comedor.Presentacion.csprojResolveAssemblyReference.cache
+D:\UPDS\Modalidad de Grado I\Proyecto\MG1.Comedor.Presentacion\MG1.Comedor.Presentacion\obj\Debug\MG1.Comedor.Presentacion.FrmProgramacion.resources
+D:\UPDS\Modalidad de Grado I\Proyecto\MG1.Comedor.Presentacion\MG1.Comedor.Presentacion\obj\Debug\MG1.Comedor.Presentacion.Reportes.resources
+D:\UPDS\Modalidad de Grado I\Proyecto\MG1.Comedor.Presentacion\MG1.Comedor.Presentacion\obj\Debug\MG1.Comedor.Presentacion.FrmUsuario.resources
+D:\UPDS\Modalidad de Grado I\Proyecto\MG1.Comedor.Presentacion\MG1.Comedor.Presentacion\obj\Debug\MG1.Comedor.Presentacion.Properties.Resources.resources
+D:\UPDS\Modalidad de Grado I\Proyecto\MG1.Comedor.Presentacion\MG1.Comedor.Presentacion\obj\Debug\MG1.Comedor.Presentacion.csproj.GenerateResource.Cache
+D:\UPDS\Modalidad de Grado I\Proyecto\MG1.Comedor.Presentacion\MG1.Comedor.Presentacion\obj\Debug\MG1.Comedor.Presentacion.exe
+D:\UPDS\Modalidad de Grado I\Proyecto\MG1.Comedor.Presentacion\MG1.Comedor.Presentacion\obj\Debug\MG1.Comedor.Presentacion.pdb
+D:\UPDS\Modalidad_de_Grado I\Proyecto\MG1.Comedor.Presentacion\MG1.Comedor.Presentacion\bin\Debug\MG1.Comedor.Presentacion.exe.config
+D:\UPDS\Modalidad_de_Grado I\Proyecto\MG1.Comedor.Presentacion\MG1.Comedor.Presentacion\obj\Debug\MG1.Comedor.Presentacion.exe
+D:\UPDS\Modalidad_de_Grado I\Proyecto\MG1.Comedor.Presentacion\MG1.Comedor.Presentacion\obj\Debug\MG1.Comedor.Presentacion.pdb
+I:\UPDS\Modalidad_de_Grado_I\Proyecto\MG1.Comedor.Presentacion\MG1.Comedor.Presentacion\bin\Debug\MG1.Comedor.Presentacion.exe.config
+I:\UPDS\Modalidad_de_Grado_I\Proyecto\MG1.Comedor.Presentacion\MG1.Comedor.Presentacion\obj\Debug\MG1.Comedor.Presentacion.exe
+I:\UPDS\Modalidad_de_Grado_I\Proyecto\MG1.Comedor.Presentacion\MG1.Comedor.Presentacion\obj\Debug\MG1.Comedor.Presentacion.pdb
+I:\UPDS\Modalidad_de_Grado_I\Proyecto\MG1.Comedor.Presentacion\MG1.Comedor.Presentacion\bin\Debug\MG1.Comedor.Presentacion.exe
+I:\UPDS\Modalidad_de_Grado_I\Proyecto\MG1.Comedor.Presentacion\MG1.Comedor.Presentacion\bin\Debug\MG1.Comedor.Presentacion.pdb
+I:\UPDS\Modalidad_de_Grado_I\Proyecto\MG1.Comedor.Presentacion\MG1.Comedor.Presentacion\bin\Debug\EntityFramework.dll
+I:\UPDS\Modalidad_de_Grado_I\Proyecto\MG1.Comedor.Presentacion\MG1.Comedor.Presentacion\bin\Debug\MG1.ComedorGeo.Datos.dll
+I:\UPDS\Modalidad_de_Grado_I\Proyecto\MG1.Comedor.Presentacion\MG1.Comedor.Presentacion\bin\Debug\MG1.ComedorGeo.Negocio.dll
+I:\UPDS\Modalidad_de_Grado_I\Proyecto\MG1.Comedor.Presentacion\MG1.Comedor.Presentacion\bin\Debug\MG1.ComedorGeo.Utilitarios.dll
+I:\UPDS\Modalidad_de_Grado_I\Proyecto\MG1.Comedor.Presentacion\MG1.Comedor.Presentacion\bin\Debug\Microsoft.SqlServer.Types.dll
+I:\UPDS\Modalidad_de_Grado_I\Proyecto\MG1.Comedor.Presentacion\MG1.Comedor.Presentacion\bin\Debug\MG1.ComedorGeo.Datos.pdb
+I:\UPDS\Modalidad_de_Grado_I\Proyecto\MG1.Comedor.Presentacion\MG1.Comedor.Presentacion\bin\Debug\MG1.ComedorGeo.Negocio.pdb
+I:\UPDS\Modalidad_de_Grado_I\Proyecto\MG1.Comedor.Presentacion\MG1.Comedor.Presentacion\bin\Debug\MG1.ComedorGeo.Utilitarios.pdb
+I:\UPDS\Modalidad_de_Grado_I\Proyecto\MG1.Comedor.Presentacion\MG1.Comedor.Presentacion\bin\Debug\EntityFramework.xml
+I:\UPDS\Modalidad_de_Grado_I\Proyecto\MG1.Comedor.Presentacion\MG1.Comedor.Presentacion\bin\Debug\de\Microsoft.SqlServer.Types.resources.dll
+I:\UPDS\Modalidad_de_Grado_I\Proyecto\MG1.Comedor.Presentacion\MG1.Comedor.Presentacion\bin\Debug\es\Microsoft.SqlServer.Types.resources.dll
+I:\UPDS\Modalidad_de_Grado_I\Proyecto\MG1.Comedor.Presentacion\MG1.Comedor.Presentacion\bin\Debug\fr\Microsoft.SqlServer.Types.resources.dll
+I:\UPDS\Modalidad_de_Grado_I\Proyecto\MG1.Comedor.Presentacion\MG1.Comedor.Presentacion\bin\Debug\it\Microsoft.SqlServer.Types.resources.dll
+I:\UPDS\Modalidad_de_Grado_I\Proyecto\MG1.Comedor.Presentacion\MG1.Comedor.Presentacion\bin\Debug\ja\Microsoft.SqlServer.Types.resources.dll
+I:\UPDS\Modalidad_de_Grado_I\Proyecto\MG1.Comedor.Presentacion\MG1.Comedor.Presentacion\bin\Debug\ko\Microsoft.SqlServer.Types.resources.dll
+I:\UPDS\Modalidad_de_Grado_I\Proyecto\MG1.Comedor.Presentacion\MG1.Comedor.Presentacion\bin\Debug\pt\Microsoft.SqlServer.Types.resources.dll
+I:\UPDS\Modalidad_de_Grado_I\Proyecto\MG1.Comedor.Presentacion\MG1.Comedor.Presentacion\bin\Debug\ru\Microsoft.SqlServer.Types.resources.dll
+I:\UPDS\Modalidad_de_Grado_I\Proyecto\MG1.Comedor.Presentacion\MG1.Comedor.Presentacion\bin\Debug\zh-Hans\Microsoft.SqlServer.Types.resources.dll
+I:\UPDS\Modalidad_de_Grado_I\Proyecto\MG1.Comedor.Presentacion\MG1.Comedor.Presentacion\bin\Debug\zh-Hant\Microsoft.SqlServer.Types.resources.dll
+I:\UPDS\Modalidad_de_Grado_I\Proyecto\MG1.Comedor.Presentacion\MG1.Comedor.Presentacion\obj\Debug\MG1.Comedor.Presentacion.csprojResolveAssemblyReference.cache
+I:\UPDS\Modalidad_de_Grado_I\Proyecto\MG1.Comedor.Presentacion\MG1.Comedor.Presentacion\obj\Debug\MG1.Comedor.Presentacion.FrmCargo.resources
+I:\UPDS\Modalidad_de_Grado_I\Proyecto\MG1.Comedor.Presentacion\MG1.Comedor.Presentacion\obj\Debug\MG1.Comedor.Presentacion.FrmEmpleado.resources
+I:\UPDS\Modalidad_de_Grado_I\Proyecto\MG1.Comedor.Presentacion\MG1.Comedor.Presentacion\obj\Debug\MG1.Comedor.Presentacion.FrmPrincipal.resources
+I:\UPDS\Modalidad_de_Grado_I\Proyecto\MG1.Comedor.Presentacion\MG1.Comedor.Presentacion\obj\Debug\MG1.Comedor.Presentacion.FrmProgramacion.resources
+I:\UPDS\Modalidad_de_Grado_I\Proyecto\MG1.Comedor.Presentacion\MG1.Comedor.Presentacion\obj\Debug\MG1.Comedor.Presentacion.FrmReportes.resources
+I:\UPDS\Modalidad_de_Grado_I\Proyecto\MG1.Comedor.Presentacion\MG1.Comedor.Presentacion\obj\Debug\MG1.Comedor.Presentacion.FrmUsuario.resources
+I:\UPDS\Modalidad_de_Grado_I\Proyecto\MG1.Comedor.Presentacion\MG1.Comedor.Presentacion\obj\Debug\MG1.Comedor.Presentacion.Properties.Resources.resources
+I:\UPDS\Modalidad_de_Grado_I\Proyecto\MG1.Comedor.Presentacion\MG1.Comedor.Presentacion\obj\Debug\MG1.Comedor.Presentacion.csproj.GenerateResource.Cache
+D:\UPDS\Modalidad_de_Grado_I\Proyecto\MG1.Comedor.Presentacion\MG1.Comedor.Presentacion\bin\Debug\MG1.Comedor.Presentacion.exe.config
+D:\UPDS\Modalidad_de_Grado_I\Proyecto\MG1.Comedor.Presentacion\MG1.Comedor.Presentacion\bin\Debug\MG1.Comedor.Presentacion.exe
+D:\UPDS\Modalidad_de_Grado_I\Proyecto\MG1.Comedor.Presentacion\MG1.Comedor.Presentacion\bin\Debug\MG1.Comedor.Presentacion.pdb
+D:\UPDS\Modalidad_de_Grado_I\Proyecto\MG1.Comedor.Presentacion\MG1.Comedor.Presentacion\bin\Debug\EntityFramework.dll
+D:\UPDS\Modalidad_de_Grado_I\Proyecto\MG1.Comedor.Presentacion\MG1.Comedor.Presentacion\bin\Debug\MG1.ComedorGeo.Datos.dll
+D:\UPDS\Modalidad_de_Grado_I\Proyecto\MG1.Comedor.Presentacion\MG1.Comedor.Presentacion\bin\Debug\MG1.ComedorGeo.Negocio.dll
+D:\UPDS\Modalidad_de_Grado_I\Proyecto\MG1.Comedor.Presentacion\MG1.Comedor.Presentacion\bin\Debug\MG1.ComedorGeo.Utilitarios.dll
+D:\UPDS\Modalidad_de_Grado_I\Proyecto\MG1.Comedor.Presentacion\MG1.Comedor.Presentacion\bin\Debug\Microsoft.SqlServer.Types.dll
+D:\UPDS\Modalidad_de_Grado_I\Proyecto\MG1.Comedor.Presentacion\MG1.Comedor.Presentacion\bin\Debug\MG1.ComedorGeo.Datos.pdb
+D:\UPDS\Modalidad_de_Grado_I\Proyecto\MG1.Comedor.Presentacion\MG1.Comedor.Presentacion\bin\Debug\MG1.ComedorGeo.Negocio.pdb
+D:\UPDS\Modalidad_de_Grado_I\Proyecto\MG1.Comedor.Presentacion\MG1.Comedor.Presentacion\bin\Debug\MG1.ComedorGeo.Utilitarios.pdb
+D:\UPDS\Modalidad_de_Grado_I\Proyecto\MG1.Comedor.Presentacion\MG1.Comedor.Presentacion\bin\Debug\EntityFramework.xml
+D:\UPDS\Modalidad_de_Grado_I\Proyecto\MG1.Comedor.Presentacion\MG1.Comedor.Presentacion\bin\Debug\de\Microsoft.SqlServer.Types.resources.dll
+D:\UPDS\Modalidad_de_Grado_I\Proyecto\MG1.Comedor.Presentacion\MG1.Comedor.Presentacion\bin\Debug\es\Microsoft.SqlServer.Types.resources.dll
+D:\UPDS\Modalidad_de_Grado_I\Proyecto\MG1.Comedor.Presentacion\MG1.Comedor.Presentacion\bin\Debug\fr\Microsoft.SqlServer.Types.resources.dll
+D:\UPDS\Modalidad_de_Grado_I\Proyecto\MG1.Comedor.Presentacion\MG1.Comedor.Presentacion\bin\Debug\it\Microsoft.SqlServer.Types.resources.dll
+D:\UPDS\Modalidad_de_Grado_I\Proyecto\MG1.Comedor.Presentacion\MG1.Comedor.Presentacion\bin\Debug\ja\Microsoft.SqlServer.Types.resources.dll
+D:\UPDS\Modalidad_de_Grado_I\Proyecto\MG1.Comedor.Presentacion\MG1.Comedor.Presentacion\bin\Debug\ko\Microsoft.SqlServer.Types.resources.dll
+D:\UPDS\Modalidad_de_Grado_I\Proyecto\MG1.Comedor.Presentacion\MG1.Comedor.Presentacion\bin\Debug\pt\Microsoft.SqlServer.Types.resources.dll
+D:\UPDS\Modalidad_de_Grado_I\Proyecto\MG1.Comedor.Presentacion\MG1.Comedor.Presentacion\bin\Debug\ru\Microsoft.SqlServer.Types.resources.dll
+D:\UPDS\Modalidad_de_Grado_I\Proyecto\MG1.Comedor.Presentacion\MG1.Comedor.Presentacion\bin\Debug\zh-Hans\Microsoft.SqlServer.Types.resources.dll
+D:\UPDS\Modalidad_de_Grado_I\Proyecto\MG1.Comedor.Presentacion\MG1.Comedor.Presentacion\bin\Debug\zh-Hant\Microsoft.SqlServer.Types.resources.dll
+D:\UPDS\Modalidad_de_Grado_I\Proyecto\MG1.Comedor.Presentacion\MG1.Comedor.Presentacion\obj\Debug\MG1.Comedor.Presentacion.csprojResolveAssemblyReference.cache
+D:\UPDS\Modalidad_de_Grado_I\Proyecto\MG1.Comedor.Presentacion\MG1.Comedor.Presentacion\obj\Debug\MG1.Comedor.Presentacion.FormInicio.resources
+D:\UPDS\Modalidad_de_Grado_I\Proyecto\MG1.Comedor.Presentacion\MG1.Comedor.Presentacion\obj\Debug\MG1.Comedor.Presentacion.FrmCargo.resources
+D:\UPDS\Modalidad_de_Grado_I\Proyecto\MG1.Comedor.Presentacion\MG1.Comedor.Presentacion\obj\Debug\MG1.Comedor.Presentacion.FrmEmpleado.resources
+D:\UPDS\Modalidad_de_Grado_I\Proyecto\MG1.Comedor.Presentacion\MG1.Comedor.Presentacion\obj\Debug\MG1.Comedor.Presentacion.FrmGrupo.resources
+D:\UPDS\Modalidad_de_Grado_I\Proyecto\MG1.Comedor.Presentacion\MG1.Comedor.Presentacion\obj\Debug\MG1.Comedor.Presentacion.FrmPrincipal.resources
+D:\UPDS\Modalidad_de_Grado_I\Proyecto\MG1.Comedor.Presentacion\MG1.Comedor.Presentacion\obj\Debug\MG1.Comedor.Presentacion.FrmProgramacion.resources
+D:\UPDS\Modalidad_de_Grado_I\Proyecto\MG1.Comedor.Presentacion\MG1.Comedor.Presentacion\obj\Debug\MG1.Comedor.Presentacion.FrmReportes.resources
+D:\UPDS\Modalidad_de_Grado_I\Proyecto\MG1.Comedor.Presentacion\MG1.Comedor.Presentacion\obj\Debug\MG1.Comedor.Presentacion.FrmLogin.resources
+D:\UPDS\Modalidad_de_Grado_I\Proyecto\MG1.Comedor.Presentacion\MG1.Comedor.Presentacion\obj\Debug\MG1.Comedor.Presentacion.FrmUsuario.resources
+D:\UPDS\Modalidad_de_Grado_I\Proyecto\MG1.Comedor.Presentacion\MG1.Comedor.Presentacion\obj\Debug\MG1.Comedor.Presentacion.Properties.Resources.resources
+D:\UPDS\Modalidad_de_Grado_I\Proyecto\MG1.Comedor.Presentacion\MG1.Comedor.Presentacion\obj\Debug\MG1.Comedor.Presentacion.csproj.GenerateResource.Cache
+D:\UPDS\Modalidad_de_Grado_I\Proyecto\MG1.Comedor.Presentacion\MG1.Comedor.Presentacion\obj\Debug\MG1.Comedor.Presentacion.exe
+D:\UPDS\Modalidad_de_Grado_I\Proyecto\MG1.Comedor.Presentacion\MG1.Comedor.Presentacion\obj\Debug\MG1.Comedor.Presentacion.pdb
+E:\Proyecto de Grado 2017\AlexPereira\Proyecto\MG1.Comedor.Presentacion\MG1.Comedor.Presentacion\bin\Debug\MG1.Comedor.Presentacion.exe.config
+E:\Proyecto de Grado 2017\AlexPereira\Proyecto\MG1.Comedor.Presentacion\MG1.Comedor.Presentacion\obj\Debug\MG1.Comedor.Presentacion.exe
+E:\Proyecto de Grado 2017\AlexPereira\Proyecto\MG1.Comedor.Presentacion\MG1.Comedor.Presentacion\obj\Debug\MG1.Comedor.Presentacion.pdb
+E:\Proyecto de Grado 2017\AlexPereira\Proyecto\MG1.Comedor.Presentacion\MG1.Comedor.Presentacion\obj\Debug\MG1.Comedor.Presentacion.csprojResolveAssemblyReference.cache
+E:\Proyecto de Grado 2017\AlexPereira\Proyecto\MG1.Comedor.Presentacion\MG1.Comedor.Presentacion\obj\Debug\MG1.Comedor.Presentacion.FormInicio.resources
+E:\Proyecto de Grado 2017\AlexPereira\Proyecto\MG1.Comedor.Presentacion\MG1.Comedor.Presentacion\obj\Debug\MG1.Comedor.Presentacion.FrmCargo.resources
+E:\Proyecto de Grado 2017\AlexPereira\Proyecto\MG1.Comedor.Presentacion\MG1.Comedor.Presentacion\obj\Debug\MG1.Comedor.Presentacion.FrmEmpleado.resources
+E:\Proyecto de Grado 2017\AlexPereira\Proyecto\MG1.Comedor.Presentacion\MG1.Comedor.Presentacion\obj\Debug\MG1.Comedor.Presentacion.FrmGrupo.resources
+E:\Proyecto de Grado 2017\AlexPereira\Proyecto\MG1.Comedor.Presentacion\MG1.Comedor.Presentacion\obj\Debug\MG1.Comedor.Presentacion.FrmPrincipal.resources
+E:\Proyecto de Grado 2017\AlexPereira\Proyecto\MG1.Comedor.Presentacion\MG1.Comedor.Presentacion\obj\Debug\MG1.Comedor.Presentacion.FrmProgramacion.resources
+E:\Proyecto de Grado 2017\AlexPereira\Proyecto\MG1.Comedor.Presentacion\MG1.Comedor.Presentacion\obj\Debug\MG1.Comedor.Presentacion.FrmReportes.resources
+E:\Proyecto de Grado 2017\AlexPereira\Proyecto\MG1.Comedor.Presentacion\MG1.Comedor.Presentacion\obj\Debug\MG1.Comedor.Presentacion.FrmLogin.resources
+E:\Proyecto de Grado 2017\AlexPereira\Proyecto\MG1.Comedor.Presentacion\MG1.Comedor.Presentacion\obj\Debug\MG1.Comedor.Presentacion.FrmUsuario.resources
+E:\Proyecto de Grado 2017\AlexPereira\Proyecto\MG1.Comedor.Presentacion\MG1.Comedor.Presentacion\obj\Debug\MG1.Comedor.Presentacion.Properties.Resources.resources
+E:\Proyecto de Grado 2017\AlexPereira\Proyecto\MG1.Comedor.Presentacion\MG1.Comedor.Presentacion\obj\Debug\MG1.Comedor.Presentacion.csproj.GenerateResource.Cache
+E:\Proyecto de Grado 2017\AlexPereira\Proyecto\MG1.Comedor.Presentacion\MG1.Comedor.Presentacion\obj\Debug\RdlCompile.cache
+E:\Proyecto de Grado 2017\AlexPereira\Proyecto\MG1.Comedor.Presentacion\MG1.Comedor.Presentacion\obj\Debug\RdlCompile.compiled
+E:\Proyecto de Grado 2017\AlexPereira\Proyecto\MG1.Comedor.Presentacion\MG1.Comedor.Presentacion\bin\Debug\MG1.Comedor.Presentacion.exe
+E:\Proyecto de Grado 2017\AlexPereira\Proyecto\MG1.Comedor.Presentacion\MG1.Comedor.Presentacion\bin\Debug\MG1.Comedor.Presentacion.pdb
+E:\Proyecto de Grado 2017\AlexPereira\Proyecto\MG1.Comedor.Presentacion\MG1.Comedor.Presentacion\bin\Debug\EntityFramework.dll
+E:\Proyecto de Grado 2017\AlexPereira\Proyecto\MG1.Comedor.Presentacion\MG1.Comedor.Presentacion\bin\Debug\MG1.ComedorGeo.Datos.dll
+E:\Proyecto de Grado 2017\AlexPereira\Proyecto\MG1.Comedor.Presentacion\MG1.Comedor.Presentacion\bin\Debug\MG1.ComedorGeo.Negocio.dll
+E:\Proyecto de Grado 2017\AlexPereira\Proyecto\MG1.Comedor.Presentacion\MG1.Comedor.Presentacion\bin\Debug\MG1.ComedorGeo.Utilitarios.dll
+E:\Proyecto de Grado 2017\AlexPereira\Proyecto\MG1.Comedor.Presentacion\MG1.Comedor.Presentacion\bin\Debug\Microsoft.ReportViewer.WinForms.dll
+E:\Proyecto de Grado 2017\AlexPereira\Proyecto\MG1.Comedor.Presentacion\MG1.Comedor.Presentacion\bin\Debug\MG1.ComedorGeo.Datos.pdb
+E:\Proyecto de Grado 2017\AlexPereira\Proyecto\MG1.Comedor.Presentacion\MG1.Comedor.Presentacion\bin\Debug\MG1.ComedorGeo.Negocio.pdb
+E:\Proyecto de Grado 2017\AlexPereira\Proyecto\MG1.Comedor.Presentacion\MG1.Comedor.Presentacion\bin\Debug\MG1.ComedorGeo.Utilitarios.pdb
+E:\Proyecto de Grado 2017\AlexPereira\Proyecto\MG1.Comedor.Presentacion\MG1.Comedor.Presentacion\bin\Debug\EntityFramework.xml
+E:\Proyecto de Grado 2017\AlexPereira\Proyecto\MG1.Comedor.Presentacion\MG1.Comedor.Presentacion\bin\Debug\es\Microsoft.ReportViewer.WinForms.resources.dll
+E:\Proyecto de Grado 2017\AlexPereira\Proyecto\MG1.Comedor.Presentacion\MG1.Comedor.Presentacion\bin\Debug\Bunifu_UI_v1.52.dll
+E:\Proyecto de Grado 2017\AlexPereira\Proyecto\MG1.Comedor.Presentacion\MG1.Comedor.Presentacion\bin\Debug\MetroFramework.dll
+E:\Proyecto de Grado 2017\AlexPereira\Proyecto\MG1.Comedor.Presentacion\MG1.Comedor.Presentacion\obj\Debug\MG1.Comedor.Presentacion.FrmMaimMenu.resources
+E:\Proyecto de Grado 2017\AlexPereira\Proyecto\MG1.Comedor.Presentacion\MG1.Comedor.Presentacion\obj\Debug\MG1.Comedor.Presentacion.FrmMenu.resources
+E:\Proyecto de Grado 2017\AlexPereira\Proyecto v1\MG1.Comedor.Presentacion\MG1.Comedor.Presentacion\bin\Debug\MG1.Comedor.Presentacion.exe.config
+E:\Proyecto de Grado 2017\AlexPereira\Proyecto v1\MG1.Comedor.Presentacion\MG1.Comedor.Presentacion\obj\Debug\MG1.Comedor.Presentacion.exe
+E:\Proyecto de Grado 2017\AlexPereira\Proyecto v1\MG1.Comedor.Presentacion\MG1.Comedor.Presentacion\obj\Debug\MG1.Comedor.Presentacion.pdb
+E:\Proyecto de Grado 2017\AlexPereira\Proyecto v1\AlimentacionGeo\MG1.Comedor.Presentacion\MG1.Comedor.Presentacion\bin\Debug\MG1.Comedor.Presentacion.exe.config
+E:\Proyecto de Grado 2017\AlexPereira\Proyecto v1\AlimentacionGeo\MG1.Comedor.Presentacion\MG1.Comedor.Presentacion\obj\Debug\MG1.Comedor.Presentacion.exe
+E:\Proyecto de Grado 2017\AlexPereira\Proyecto v1\AlimentacionGeo\MG1.Comedor.Presentacion\MG1.Comedor.Presentacion\obj\Debug\MG1.Comedor.Presentacion.pdb

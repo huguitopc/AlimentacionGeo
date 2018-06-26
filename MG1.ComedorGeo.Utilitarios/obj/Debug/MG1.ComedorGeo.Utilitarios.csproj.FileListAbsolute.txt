@@ -1,0 +1,20 @@
+D:\UPDS\Modalidad de Grado I\Proyecto\MG1.ComedorGeo.Utilitarios\bin\Debug\MG1.ComedorGeo.Utilitarios.dll
+D:\UPDS\Modalidad de Grado I\Proyecto\MG1.ComedorGeo.Utilitarios\bin\Debug\MG1.ComedorGeo.Utilitarios.pdb
+D:\UPDS\Modalidad de Grado I\Proyecto\MG1.ComedorGeo.Utilitarios\obj\Debug\MG1.ComedorGeo.Utilitarios.csprojResolveAssemblyReference.cache
+D:\UPDS\Modalidad de Grado I\Proyecto\MG1.ComedorGeo.Utilitarios\obj\Debug\MG1.ComedorGeo.Utilitarios.dll
+D:\UPDS\Modalidad de Grado I\Proyecto\MG1.ComedorGeo.Utilitarios\obj\Debug\MG1.ComedorGeo.Utilitarios.pdb
+I:\UPDS\Modalidad_de_Grado_I\Proyecto\MG1.ComedorGeo.Utilitarios\bin\Debug\MG1.ComedorGeo.Utilitarios.dll
+I:\UPDS\Modalidad_de_Grado_I\Proyecto\MG1.ComedorGeo.Utilitarios\bin\Debug\MG1.ComedorGeo.Utilitarios.pdb
+I:\UPDS\Modalidad_de_Grado_I\Proyecto\MG1.ComedorGeo.Utilitarios\obj\Debug\MG1.ComedorGeo.Utilitarios.csprojResolveAssemblyReference.cache
+I:\UPDS\Modalidad_de_Grado_I\Proyecto\MG1.ComedorGeo.Utilitarios\obj\Debug\MG1.ComedorGeo.Utilitarios.dll
+I:\UPDS\Modalidad_de_Grado_I\Proyecto\MG1.ComedorGeo.Utilitarios\obj\Debug\MG1.ComedorGeo.Utilitarios.pdb
+D:\UPDS\Modalidad_de_Grado_I\Proyecto\MG1.ComedorGeo.Utilitarios\bin\Debug\MG1.ComedorGeo.Utilitarios.dll
+D:\UPDS\Modalidad_de_Grado_I\Proyecto\MG1.ComedorGeo.Utilitarios\bin\Debug\MG1.ComedorGeo.Utilitarios.pdb
+D:\UPDS\Modalidad_de_Grado_I\Proyecto\MG1.ComedorGeo.Utilitarios\obj\Debug\MG1.ComedorGeo.Utilitarios.csprojResolveAssemblyReference.cache
+D:\UPDS\Modalidad_de_Grado_I\Proyecto\MG1.ComedorGeo.Utilitarios\obj\Debug\MG1.ComedorGeo.Utilitarios.dll
+D:\UPDS\Modalidad_de_Grado_I\Proyecto\MG1.ComedorGeo.Utilitarios\obj\Debug\MG1.ComedorGeo.Utilitarios.pdb
+E:\Proyecto de Grado 2017\AlexPereira\Proyecto\MG1.ComedorGeo.Utilitarios\bin\Debug\MG1.ComedorGeo.Utilitarios.dll
+E:\Proyecto de Grado 2017\AlexPereira\Proyecto\MG1.ComedorGeo.Utilitarios\bin\Debug\MG1.ComedorGeo.Utilitarios.pdb
+E:\Proyecto de Grado 2017\AlexPereira\Proyecto\MG1.ComedorGeo.Utilitarios\obj\Debug\MG1.ComedorGeo.Utilitarios.csprojResolveAssemblyReference.cache
+E:\Proyecto de Grado 2017\AlexPereira\Proyecto\MG1.ComedorGeo.Utilitarios\obj\Debug\MG1.ComedorGeo.Utilitarios.dll
+E:\Proyecto de Grado 2017\AlexPereira\Proyecto\MG1.ComedorGeo.Utilitarios\obj\Debug\MG1.ComedorGeo.Utilitarios.pdb

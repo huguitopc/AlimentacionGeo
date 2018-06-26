@@ -1,0 +1,975 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="dbAlimentacionGeoModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityContainer Name="dbAlimentacionGeoEntities" annotation:LazyLoadingEnabled="true">
+    <FunctionImport Name="sp_ActualizarNombreCompletoCursor" />
+    <FunctionImport Name="sp_ActualizarTBResumenAlimentacion" />
+    <EntitySet Name="Alimento" EntityType="dbAlimentacionGeoModel.Alimento" />
+    <EntitySet Name="Area" EntityType="dbAlimentacionGeoModel.Area" />
+    <EntitySet Name="Bitacora" EntityType="dbAlimentacionGeoModel.Bitacora" />
+    <EntitySet Name="Cargo" EntityType="dbAlimentacionGeoModel.Cargo" />
+    <EntitySet Name="CentroCosto" EntityType="dbAlimentacionGeoModel.CentroCosto" />
+    <EntitySet Name="DetalleAlimento" EntityType="dbAlimentacionGeoModel.DetalleAlimento" />
+    <EntitySet Name="DetalleEstado" EntityType="dbAlimentacionGeoModel.DetalleEstado" />
+    <EntitySet Name="DetalleEstadoServicio" EntityType="dbAlimentacionGeoModel.DetalleEstadoServicio" />
+    <EntitySet Name="DetalleProgramacion" EntityType="dbAlimentacionGeoModel.DetalleProgramacion" />
+    <EntitySet Name="Empleado" EntityType="dbAlimentacionGeoModel.Empleado" />
+    <EntitySet Name="Empresa" EntityType="dbAlimentacionGeoModel.Empresa" />
+    <EntitySet Name="Estado" EntityType="dbAlimentacionGeoModel.Estado" />
+    <EntitySet Name="EstadoEmpleado" EntityType="dbAlimentacionGeoModel.EstadoEmpleado" />
+    <EntitySet Name="Grupo" EntityType="dbAlimentacionGeoModel.Grupo" />
+    <EntitySet Name="GrupoPerfil" EntityType="dbAlimentacionGeoModel.GrupoPerfil" />
+    <EntitySet Name="Ingrediente" EntityType="dbAlimentacionGeoModel.Ingrediente" />
+    <EntitySet Name="Menu" EntityType="dbAlimentacionGeoModel.Menu" />
+    <EntitySet Name="OrdenServicio" EntityType="dbAlimentacionGeoModel.OrdenServicio" />
+    <EntitySet Name="Perfil" EntityType="dbAlimentacionGeoModel.Perfil" />
+    <EntitySet Name="Persona" EntityType="dbAlimentacionGeoModel.Persona" />
+    <EntitySet Name="Programacion" EntityType="dbAlimentacionGeoModel.Programacion" />
+    <EntitySet Name="RepresentanteLegal" EntityType="dbAlimentacionGeoModel.RepresentanteLegal" />
+    <EntitySet Name="Rubro" EntityType="dbAlimentacionGeoModel.Rubro" />
+    <EntitySet Name="TBResumenAlimentacion" EntityType="dbAlimentacionGeoModel.TBResumenAlimentacion" />
+    <EntitySet Name="Tipo" EntityType="dbAlimentacionGeoModel.Tipo" />
+    <EntitySet Name="TipoAlimento" EntityType="dbAlimentacionGeoModel.TipoAlimento" />
+    <EntitySet Name="TipoEmpresa" EntityType="dbAlimentacionGeoModel.TipoEmpresa" />
+    <EntitySet Name="Turno" EntityType="dbAlimentacionGeoModel.Turno" />
+    <EntitySet Name="Usuario" EntityType="dbAlimentacionGeoModel.Usuario" />
+    <EntitySet Name="VCentroCosto" EntityType="dbAlimentacionGeoModel.VCentroCosto" />
+    <EntitySet Name="VDetalleEstadoServicio" EntityType="dbAlimentacionGeoModel.VDetalleEstadoServicio" />
+    <EntitySet Name="VDetalleProgramacion" EntityType="dbAlimentacionGeoModel.VDetalleProgramacion" />
+    <EntitySet Name="VEmpleado" EntityType="dbAlimentacionGeoModel.VEmpleado" />
+    <EntitySet Name="VEmpleadoProgramacion" EntityType="dbAlimentacionGeoModel.VEmpleadoProgramacion" />
+    <EntitySet Name="VGrupoPerfil" EntityType="dbAlimentacionGeoModel.VGrupoPerfil" />
+    <EntitySet Name="VPerfil" EntityType="dbAlimentacionGeoModel.VPerfil" />
+    <AssociationSet Name="FK__Alimento__itTipo__693CA210" Association="dbAlimentacionGeoModel.FK__Alimento__itTipo__693CA210">
+      <End Role="Tipo" EntitySet="Tipo" />
+      <End Role="Alimento" EntitySet="Alimento" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Alimento__itTipo__6A30C649" Association="dbAlimentacionGeoModel.FK__Alimento__itTipo__6A30C649">
+      <End Role="TipoAlimento" EntitySet="TipoAlimento" />
+      <End Role="Alimento" EntitySet="Alimento" />
+    </AssociationSet>
+    <AssociationSet Name="FK__DetalleAl__idAli__6D0D32F4" Association="dbAlimentacionGeoModel.FK__DetalleAl__idAli__6D0D32F4">
+      <End Role="Alimento" EntitySet="Alimento" />
+      <End Role="DetalleAlimento" EntitySet="DetalleAlimento" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Menu__idAlimento__00200768" Association="dbAlimentacionGeoModel.FK__Menu__idAlimento__00200768">
+      <End Role="Alimento" EntitySet="Alimento" />
+      <End Role="Menu" EntitySet="Menu" />
+    </AssociationSet>
+    <AssociationSet Name="FK__CentroCos__idAre__6C190EBB" Association="dbAlimentacionGeoModel.FK__CentroCos__idAre__6C190EBB">
+      <End Role="Area" EntitySet="Area" />
+      <End Role="CentroCosto" EntitySet="CentroCosto" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Bitacora__idUsua__6B24EA82" Association="dbAlimentacionGeoModel.FK__Bitacora__idUsua__6B24EA82">
+      <End Role="Usuario" EntitySet="Usuario" />
+      <End Role="Bitacora" EntitySet="Bitacora" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Empleado__idCarg__787EE5A0" Association="dbAlimentacionGeoModel.FK__Empleado__idCarg__787EE5A0">
+      <End Role="Cargo" EntitySet="Cargo" />
+      <End Role="Empleado" EntitySet="Empleado" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Empleado__76969D2E" Association="dbAlimentacionGeoModel.FK__Empleado__76969D2E">
+      <End Role="CentroCosto" EntitySet="CentroCosto" />
+      <End Role="Empleado" EntitySet="Empleado" />
+    </AssociationSet>
+    <AssociationSet Name="FK__DetalleAl__idIng__6E01572D" Association="dbAlimentacionGeoModel.FK__DetalleAl__idIng__6E01572D">
+      <End Role="Ingrediente" EntitySet="Ingrediente" />
+      <End Role="DetalleAlimento" EntitySet="DetalleAlimento" />
+    </AssociationSet>
+    <AssociationSet Name="FK__DetalleEs__idEmp__6EF57B66" Association="dbAlimentacionGeoModel.FK__DetalleEs__idEmp__6EF57B66">
+      <End Role="Empleado" EntitySet="Empleado" />
+      <End Role="DetalleEstado" EntitySet="DetalleEstado" />
+    </AssociationSet>
+    <AssociationSet Name="FK__DetalleEs__idEst__6FE99F9F" Association="dbAlimentacionGeoModel.FK__DetalleEs__idEst__6FE99F9F">
+      <End Role="EstadoEmpleado" EntitySet="EstadoEmpleado" />
+      <End Role="DetalleEstado" EntitySet="DetalleEstado" />
+    </AssociationSet>
+    <AssociationSet Name="FK__DetalleEs__idEst__70DDC3D8" Association="dbAlimentacionGeoModel.FK__DetalleEs__idEst__70DDC3D8">
+      <End Role="Estado" EntitySet="Estado" />
+      <End Role="DetalleEstadoServicio" EntitySet="DetalleEstadoServicio" />
+    </AssociationSet>
+    <AssociationSet Name="FK__DetalleEs__idOrd__71D1E811" Association="dbAlimentacionGeoModel.FK__DetalleEs__idOrd__71D1E811">
+      <End Role="OrdenServicio" EntitySet="OrdenServicio" />
+      <End Role="DetalleEstadoServicio" EntitySet="DetalleEstadoServicio" />
+    </AssociationSet>
+    <AssociationSet Name="FK__DetalleEstadoSer__72C60C4A" Association="dbAlimentacionGeoModel.FK__DetalleEstadoSer__72C60C4A">
+      <End Role="DetalleProgramacion" EntitySet="DetalleProgramacion" />
+      <End Role="DetalleEstadoServicio" EntitySet="DetalleEstadoServicio" />
+    </AssociationSet>
+    <AssociationSet Name="FK__DetallePr__idEmp__73BA3083" Association="dbAlimentacionGeoModel.FK__DetallePr__idEmp__73BA3083">
+      <End Role="Empleado" EntitySet="Empleado" />
+      <End Role="DetalleProgramacion" EntitySet="DetalleProgramacion" />
+    </AssociationSet>
+    <AssociationSet Name="FK__DetallePr__idEst__74AE54BC" Association="dbAlimentacionGeoModel.FK__DetallePr__idEst__74AE54BC">
+      <End Role="Estado" EntitySet="Estado" />
+      <End Role="DetalleProgramacion" EntitySet="DetalleProgramacion" />
+    </AssociationSet>
+    <AssociationSet Name="FK__DetallePr__idPro__75A278F5" Association="dbAlimentacionGeoModel.FK__DetallePr__idPro__75A278F5">
+      <End Role="Programacion" EntitySet="Programacion" />
+      <End Role="DetalleProgramacion" EntitySet="DetalleProgramacion" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Empleado__id__778AC167" Association="dbAlimentacionGeoModel.FK__Empleado__id__778AC167">
+      <End Role="Persona" EntitySet="Persona" />
+      <End Role="Empleado" EntitySet="Empleado" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Empleado__idEmpr__797309D9" Association="dbAlimentacionGeoModel.FK__Empleado__idEmpr__797309D9">
+      <End Role="Empresa" EntitySet="Empresa" />
+      <End Role="Empleado" EntitySet="Empleado" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Empleado__idTurn__7A672E12" Association="dbAlimentacionGeoModel.FK__Empleado__idTurn__7A672E12">
+      <End Role="Turno" EntitySet="Turno" />
+      <End Role="Empleado" EntitySet="Empleado" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Empleado__idUsua__7B5B524B" Association="dbAlimentacionGeoModel.FK__Empleado__idUsua__7B5B524B">
+      <End Role="Usuario" EntitySet="Usuario" />
+      <End Role="Empleado" EntitySet="Empleado" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Empresa__idRubro__7C4F7684" Association="dbAlimentacionGeoModel.FK__Empresa__idRubro__7C4F7684">
+      <End Role="Rubro" EntitySet="Rubro" />
+      <End Role="Empresa" EntitySet="Empresa" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Empresa__idTipo__7D439ABD" Association="dbAlimentacionGeoModel.FK__Empresa__idTipo__7D439ABD">
+      <End Role="TipoEmpresa" EntitySet="TipoEmpresa" />
+      <End Role="Empresa" EntitySet="Empresa" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Represent__idEmp__02084FDA" Association="dbAlimentacionGeoModel.FK__Represent__idEmp__02084FDA">
+      <End Role="Empresa" EntitySet="Empresa" />
+      <End Role="RepresentanteLegal" EntitySet="RepresentanteLegal" />
+    </AssociationSet>
+    <AssociationSet Name="FK__GrupoPerf__idGru__7E37BEF6" Association="dbAlimentacionGeoModel.FK__GrupoPerf__idGru__7E37BEF6">
+      <End Role="Grupo" EntitySet="Grupo" />
+      <End Role="GrupoPerfil" EntitySet="GrupoPerfil" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Usuario__idGrupo__37A5467C" Association="dbAlimentacionGeoModel.FK__Usuario__idGrupo__37A5467C">
+      <End Role="Grupo" EntitySet="Grupo" />
+      <End Role="Usuario" EntitySet="Usuario" />
+    </AssociationSet>
+    <AssociationSet Name="FK__GrupoPerf__idPer__7F2BE32F" Association="dbAlimentacionGeoModel.FK__GrupoPerf__idPer__7F2BE32F">
+      <End Role="Perfil" EntitySet="Perfil" />
+      <End Role="GrupoPerfil" EntitySet="GrupoPerfil" />
+    </AssociationSet>
+    <AssociationSet Name="FK__OrdenServ__idMen__01142BA1" Association="dbAlimentacionGeoModel.FK__OrdenServ__idMen__01142BA1">
+      <End Role="Menu" EntitySet="Menu" />
+      <End Role="OrdenServicio" EntitySet="OrdenServicio" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Representant__id__02FC7413" Association="dbAlimentacionGeoModel.FK__Representant__id__02FC7413">
+      <End Role="Persona" EntitySet="Persona" />
+      <End Role="RepresentanteLegal" EntitySet="RepresentanteLegal" />
+    </AssociationSet>
+    <FunctionImport Name="sp_InsertarPerfilCursor">
+      <Parameter Name="id" Mode="In" Type="Int64" />
+      <Parameter Name="idGrupo" Mode="In" Type="Int64" />
+      <Parameter Name="Flag" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <EntitySet Name="VAlimentoProgramacion" EntityType="dbAlimentacionGeoModel.VAlimentoProgramacion" />
+  </EntityContainer>
+  <EntityType Name="Alimento">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int64" Nullable="false" />
+    <Property Name="NombreAlimento" Type="String" Nullable="false" MaxLength="90" FixedLength="false" Unicode="false" />
+    <Property Name="Precio" Type="Double" />
+    <Property Name="Cantidad" Type="Double" />
+    <Property Name="itTipo" Type="Int64" Nullable="false" />
+    <Property Name="itTipoAlimento" Type="Int64" Nullable="false" />
+    <NavigationProperty Name="Tipo" Relationship="dbAlimentacionGeoModel.FK__Alimento__itTipo__693CA210" FromRole="Alimento" ToRole="Tipo" />
+    <NavigationProperty Name="TipoAlimento" Relationship="dbAlimentacionGeoModel.FK__Alimento__itTipo__6A30C649" FromRole="Alimento" ToRole="TipoAlimento" />
+    <NavigationProperty Name="DetalleAlimento" Relationship="dbAlimentacionGeoModel.FK__DetalleAl__idAli__6D0D32F4" FromRole="Alimento" ToRole="DetalleAlimento" />
+    <NavigationProperty Name="Menu" Relationship="dbAlimentacionGeoModel.FK__Menu__idAlimento__00200768" FromRole="Alimento" ToRole="Menu" />
+  </EntityType>
+  <EntityType Name="Area">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int64" Nullable="false" />
+    <Property Name="NombreArea" Type="String" Nullable="false" MaxLength="90" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="CentroCosto" Relationship="dbAlimentacionGeoModel.FK__CentroCos__idAre__6C190EBB" FromRole="Area" ToRole="CentroCosto" />
+  </EntityType>
+  <EntityType Name="Bitacora">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Transaccion" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Tabla" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="idTabla" Type="Int64" />
+    <Property Name="idUsuario" Type="Int64" Nullable="false" />
+    <Property Name="nombreUsuario" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Host" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Aplicacion" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="Modificado" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="Usuario" Relationship="dbAlimentacionGeoModel.FK__Bitacora__idUsua__6B24EA82" FromRole="Bitacora" ToRole="Usuario" />
+  </EntityType>
+  <EntityType Name="Cargo">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int64" Nullable="false" />
+    <Property Name="NombreCargo" Type="String" Nullable="false" MaxLength="90" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="Empleado" Relationship="dbAlimentacionGeoModel.FK__Empleado__idCarg__787EE5A0" FromRole="Cargo" ToRole="Empleado" />
+  </EntityType>
+  <EntityType Name="CentroCosto">
+    <Key>
+      <PropertyRef Name="id" />
+      <PropertyRef Name="idArea" />
+    </Key>
+    <Property Name="id" Type="Int64" Nullable="false" />
+    <Property Name="NombreCentroCosto" Type="String" Nullable="false" MaxLength="90" FixedLength="false" Unicode="false" />
+    <Property Name="idArea" Type="Int64" Nullable="false" />
+    <NavigationProperty Name="Area" Relationship="dbAlimentacionGeoModel.FK__CentroCos__idAre__6C190EBB" FromRole="CentroCosto" ToRole="Area" />
+    <NavigationProperty Name="Empleado" Relationship="dbAlimentacionGeoModel.FK__Empleado__76969D2E" FromRole="CentroCosto" ToRole="Empleado" />
+  </EntityType>
+  <EntityType Name="DetalleAlimento">
+    <Key>
+      <PropertyRef Name="idAlimento" />
+      <PropertyRef Name="idIngrediente" />
+    </Key>
+    <Property Name="idAlimento" Type="Int64" Nullable="false" />
+    <Property Name="idIngrediente" Type="Int64" Nullable="false" />
+    <Property Name="Porcion" Type="Double" Nullable="false" />
+    <Property Name="TotalCalorias" Type="Double" />
+    <NavigationProperty Name="Alimento" Relationship="dbAlimentacionGeoModel.FK__DetalleAl__idAli__6D0D32F4" FromRole="DetalleAlimento" ToRole="Alimento" />
+    <NavigationProperty Name="Ingrediente" Relationship="dbAlimentacionGeoModel.FK__DetalleAl__idIng__6E01572D" FromRole="DetalleAlimento" ToRole="Ingrediente" />
+  </EntityType>
+  <EntityType Name="DetalleEstado">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="idEmpleado" Type="Int64" Nullable="false" />
+    <Property Name="idEstado" Type="Int64" Nullable="false" />
+    <Property Name="FechaInicio" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="FechaFin" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="Empleado" Relationship="dbAlimentacionGeoModel.FK__DetalleEs__idEmp__6EF57B66" FromRole="DetalleEstado" ToRole="Empleado" />
+    <NavigationProperty Name="EstadoEmpleado" Relationship="dbAlimentacionGeoModel.FK__DetalleEs__idEst__6FE99F9F" FromRole="DetalleEstado" ToRole="EstadoEmpleado" />
+  </EntityType>
+  <EntityType Name="DetalleEstadoServicio">
+    <Key>
+      <PropertyRef Name="idEmpleado" />
+      <PropertyRef Name="idProgramacion" />
+      <PropertyRef Name="idOrdenServicio" />
+    </Key>
+    <Property Name="idEmpleado" Type="Int64" Nullable="false" />
+    <Property Name="idProgramacion" Type="Int64" Nullable="false" />
+    <Property Name="idOrdenServicio" Type="Int64" Nullable="false" />
+    <Property Name="idEstado" Type="Int64" Nullable="false" />
+    <NavigationProperty Name="Estado" Relationship="dbAlimentacionGeoModel.FK__DetalleEs__idEst__70DDC3D8" FromRole="DetalleEstadoServicio" ToRole="Estado" />
+    <NavigationProperty Name="OrdenServicio" Relationship="dbAlimentacionGeoModel.FK__DetalleEs__idOrd__71D1E811" FromRole="DetalleEstadoServicio" ToRole="OrdenServicio" />
+    <NavigationProperty Name="DetalleProgramacion" Relationship="dbAlimentacionGeoModel.FK__DetalleEstadoSer__72C60C4A" FromRole="DetalleEstadoServicio" ToRole="DetalleProgramacion" />
+  </EntityType>
+  <EntityType Name="DetalleProgramacion">
+    <Key>
+      <PropertyRef Name="idEmpleado" />
+      <PropertyRef Name="idProgramacion" />
+    </Key>
+    <Property Name="idEmpleado" Type="Int64" Nullable="false" />
+    <Property Name="idProgramacion" Type="Int64" Nullable="false" />
+    <Property Name="idEstado" Type="Int64" Nullable="false" />
+    <NavigationProperty Name="DetalleEstadoServicio" Relationship="dbAlimentacionGeoModel.FK__DetalleEstadoSer__72C60C4A" FromRole="DetalleProgramacion" ToRole="DetalleEstadoServicio" />
+    <NavigationProperty Name="Empleado" Relationship="dbAlimentacionGeoModel.FK__DetallePr__idEmp__73BA3083" FromRole="DetalleProgramacion" ToRole="Empleado" />
+    <NavigationProperty Name="Estado" Relationship="dbAlimentacionGeoModel.FK__DetallePr__idEst__74AE54BC" FromRole="DetalleProgramacion" ToRole="Estado" />
+    <NavigationProperty Name="Programacion" Relationship="dbAlimentacionGeoModel.FK__DetallePr__idPro__75A278F5" FromRole="DetalleProgramacion" ToRole="Programacion" />
+  </EntityType>
+  <EntityType Name="Empleado">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int64" Nullable="false" />
+    <Property Name="idEmpresa" Type="Int64" Nullable="false" />
+    <Property Name="idCargo" Type="Int64" Nullable="false" />
+    <Property Name="idArea" Type="Int64" Nullable="false" />
+    <Property Name="idCentroCosto" Type="Int64" Nullable="false" />
+    <Property Name="FechaIngreso" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="idTurno" Type="Int64" Nullable="false" />
+    <Property Name="idUsuario" Type="Int64" Nullable="false" />
+    <NavigationProperty Name="Cargo" Relationship="dbAlimentacionGeoModel.FK__Empleado__idCarg__787EE5A0" FromRole="Empleado" ToRole="Cargo" />
+    <NavigationProperty Name="CentroCosto" Relationship="dbAlimentacionGeoModel.FK__Empleado__76969D2E" FromRole="Empleado" ToRole="CentroCosto" />
+    <NavigationProperty Name="DetalleEstado" Relationship="dbAlimentacionGeoModel.FK__DetalleEs__idEmp__6EF57B66" FromRole="Empleado" ToRole="DetalleEstado" />
+    <NavigationProperty Name="DetalleProgramacion" Relationship="dbAlimentacionGeoModel.FK__DetallePr__idEmp__73BA3083" FromRole="Empleado" ToRole="DetalleProgramacion" />
+    <NavigationProperty Name="Persona" Relationship="dbAlimentacionGeoModel.FK__Empleado__id__778AC167" FromRole="Empleado" ToRole="Persona" />
+    <NavigationProperty Name="Empresa" Relationship="dbAlimentacionGeoModel.FK__Empleado__idEmpr__797309D9" FromRole="Empleado" ToRole="Empresa" />
+    <NavigationProperty Name="Turno" Relationship="dbAlimentacionGeoModel.FK__Empleado__idTurn__7A672E12" FromRole="Empleado" ToRole="Turno" />
+    <NavigationProperty Name="Usuario" Relationship="dbAlimentacionGeoModel.FK__Empleado__idUsua__7B5B524B" FromRole="Empleado" ToRole="Usuario" />
+  </EntityType>
+  <EntityType Name="Empresa">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int64" Nullable="false" />
+    <Property Name="RazonSocial" Type="String" Nullable="false" MaxLength="90" FixedLength="false" Unicode="false" />
+    <Property Name="Nit" Type="String" Nullable="false" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="Direccion" Type="String" Nullable="false" MaxLength="90" FixedLength="false" Unicode="false" />
+    <Property Name="Telefono" Type="String" Nullable="false" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="idRubro" Type="Int64" Nullable="false" />
+    <Property Name="idTipo" Type="Int64" Nullable="false" />
+    <NavigationProperty Name="Empleado" Relationship="dbAlimentacionGeoModel.FK__Empleado__idEmpr__797309D9" FromRole="Empresa" ToRole="Empleado" />
+    <NavigationProperty Name="Rubro" Relationship="dbAlimentacionGeoModel.FK__Empresa__idRubro__7C4F7684" FromRole="Empresa" ToRole="Rubro" />
+    <NavigationProperty Name="TipoEmpresa" Relationship="dbAlimentacionGeoModel.FK__Empresa__idTipo__7D439ABD" FromRole="Empresa" ToRole="TipoEmpresa" />
+    <NavigationProperty Name="RepresentanteLegal" Relationship="dbAlimentacionGeoModel.FK__Represent__idEmp__02084FDA" FromRole="Empresa" ToRole="RepresentanteLegal" />
+  </EntityType>
+  <EntityType Name="Estado">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int64" Nullable="false" />
+    <Property Name="NombreEstado" Type="String" MaxLength="90" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="DetalleEstadoServicio" Relationship="dbAlimentacionGeoModel.FK__DetalleEs__idEst__70DDC3D8" FromRole="Estado" ToRole="DetalleEstadoServicio" />
+    <NavigationProperty Name="DetalleProgramacion" Relationship="dbAlimentacionGeoModel.FK__DetallePr__idEst__74AE54BC" FromRole="Estado" ToRole="DetalleProgramacion" />
+  </EntityType>
+  <EntityType Name="EstadoEmpleado">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int64" Nullable="false" />
+    <Property Name="NombreEstado" Type="String" Nullable="false" MaxLength="90" FixedLength="false" Unicode="false" />
+    <Property Name="DescripcionEstado" Type="String" Nullable="false" MaxLength="90" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="DetalleEstado" Relationship="dbAlimentacionGeoModel.FK__DetalleEs__idEst__6FE99F9F" FromRole="EstadoEmpleado" ToRole="DetalleEstado" />
+  </EntityType>
+  <EntityType Name="Grupo">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int64" Nullable="false" />
+    <Property Name="NombreGrupo" Type="String" Nullable="false" MaxLength="90" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="GrupoPerfil" Relationship="dbAlimentacionGeoModel.FK__GrupoPerf__idGru__7E37BEF6" FromRole="Grupo" ToRole="GrupoPerfil" />
+    <NavigationProperty Name="Usuario" Relationship="dbAlimentacionGeoModel.FK__Usuario__idGrupo__37A5467C" FromRole="Grupo" ToRole="Usuario" />
+  </EntityType>
+  <EntityType Name="GrupoPerfil">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int64" Nullable="false" />
+    <Property Name="idGrupo" Type="Int64" Nullable="false" />
+    <Property Name="idPerfil" Type="Int64" Nullable="false" />
+    <Property Name="Flag" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Grupo" Relationship="dbAlimentacionGeoModel.FK__GrupoPerf__idGru__7E37BEF6" FromRole="GrupoPerfil" ToRole="Grupo" />
+    <NavigationProperty Name="Perfil" Relationship="dbAlimentacionGeoModel.FK__GrupoPerf__idPer__7F2BE32F" FromRole="GrupoPerfil" ToRole="Perfil" />
+  </EntityType>
+  <EntityType Name="Ingrediente">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int64" Nullable="false" />
+    <Property Name="NombreIngrediente" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Calorias" Type="Double" Nullable="false" />
+    <NavigationProperty Name="DetalleAlimento" Relationship="dbAlimentacionGeoModel.FK__DetalleAl__idIng__6E01572D" FromRole="Ingrediente" ToRole="DetalleAlimento" />
+  </EntityType>
+  <EntityType Name="Menu">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int64" Nullable="false" />
+    <Property Name="FechaMenu" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="idAlimento" Type="Int64" Nullable="false" />
+    <NavigationProperty Name="Alimento" Relationship="dbAlimentacionGeoModel.FK__Menu__idAlimento__00200768" FromRole="Menu" ToRole="Alimento" />
+    <NavigationProperty Name="OrdenServicio" Relationship="dbAlimentacionGeoModel.FK__OrdenServ__idMen__01142BA1" FromRole="Menu" ToRole="OrdenServicio" />
+  </EntityType>
+  <EntityType Name="OrdenServicio">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int64" Nullable="false" />
+    <Property Name="Observacion" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
+    <Property Name="idMenu" Type="Int64" Nullable="false" />
+    <NavigationProperty Name="DetalleEstadoServicio" Relationship="dbAlimentacionGeoModel.FK__DetalleEs__idOrd__71D1E811" FromRole="OrdenServicio" ToRole="DetalleEstadoServicio" />
+    <NavigationProperty Name="Menu" Relationship="dbAlimentacionGeoModel.FK__OrdenServ__idMen__01142BA1" FromRole="OrdenServicio" ToRole="Menu" />
+  </EntityType>
+  <EntityType Name="Perfil">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int64" Nullable="false" />
+    <Property Name="NombrePerfil" Type="String" Nullable="false" MaxLength="90" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="GrupoPerfil" Relationship="dbAlimentacionGeoModel.FK__GrupoPerf__idPer__7F2BE32F" FromRole="Perfil" ToRole="GrupoPerfil" />
+  </EntityType>
+  <EntityType Name="Persona">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int64" Nullable="false" />
+    <Property Name="NombrePersona" Type="String" Nullable="false" MaxLength="90" FixedLength="false" Unicode="false" />
+    <Property Name="ApellidoPaterno" Type="String" Nullable="false" MaxLength="90" FixedLength="false" Unicode="false" />
+    <Property Name="ApellidoMaterno" Type="String" Nullable="false" MaxLength="90" FixedLength="false" Unicode="false" />
+    <Property Name="Sexo" Type="String" Nullable="false" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Name="FechaNacimiento" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="DocumentoIdentidad" Type="Int64" Nullable="false" />
+    <Property Name="NombreCompleto" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="Empleado" Relationship="dbAlimentacionGeoModel.FK__Empleado__id__778AC167" FromRole="Persona" ToRole="Empleado" />
+    <NavigationProperty Name="RepresentanteLegal" Relationship="dbAlimentacionGeoModel.FK__Representant__id__02FC7413" FromRole="Persona" ToRole="RepresentanteLegal" />
+  </EntityType>
+  <EntityType Name="Programacion">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int64" Nullable="false" />
+    <Property Name="FechaInicio" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="FechaFin" Type="DateTime" Nullable="false" Precision="3" />
+    <NavigationProperty Name="DetalleProgramacion" Relationship="dbAlimentacionGeoModel.FK__DetallePr__idPro__75A278F5" FromRole="Programacion" ToRole="DetalleProgramacion" />
+  </EntityType>
+  <EntityType Name="RepresentanteLegal">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int64" Nullable="false" />
+    <Property Name="Poder" Type="String" Nullable="false" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="idEmpresa" Type="Int64" Nullable="false" />
+    <NavigationProperty Name="Empresa" Relationship="dbAlimentacionGeoModel.FK__Represent__idEmp__02084FDA" FromRole="RepresentanteLegal" ToRole="Empresa" />
+    <NavigationProperty Name="Persona" Relationship="dbAlimentacionGeoModel.FK__Representant__id__02FC7413" FromRole="RepresentanteLegal" ToRole="Persona" />
+  </EntityType>
+  <EntityType Name="Rubro">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int64" Nullable="false" />
+    <Property Name="NombreRubro" Type="String" Nullable="false" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="DescripcionRubro" Type="String" Nullable="false" MaxLength="90" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="Empresa" Relationship="dbAlimentacionGeoModel.FK__Empresa__idRubro__7C4F7684" FromRole="Rubro" ToRole="Empresa" />
+  </EntityType>
+  <EntityType Name="TBResumenAlimentacion">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int64" Nullable="false" />
+    <Property Name="FechaAlimentacion" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="CodigoEmpleado" Type="Int64" Nullable="false" />
+    <Property Name="NombreEmpleado" Type="String" Nullable="false" MaxLength="90" FixedLength="false" Unicode="false" />
+    <Property Name="Cargo" Type="String" Nullable="false" MaxLength="90" FixedLength="false" Unicode="false" />
+    <Property Name="CentroCosto" Type="String" Nullable="false" MaxLength="90" FixedLength="false" Unicode="false" />
+    <Property Name="Area" Type="String" Nullable="false" MaxLength="90" FixedLength="false" Unicode="false" />
+    <Property Name="TipoMenu" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Plato" Type="String" Nullable="false" MaxLength="90" FixedLength="false" Unicode="false" />
+    <Property Name="CaloriasPlato" Type="Int64" Nullable="false" />
+    <Property Name="Bebida" Type="String" Nullable="false" MaxLength="90" FixedLength="false" Unicode="false" />
+    <Property Name="CaloriasBebida" Type="Int64" Nullable="false" />
+    <Property Name="Postre" Type="String" Nullable="false" MaxLength="90" FixedLength="false" Unicode="false" />
+    <Property Name="CaloriasPostre" Type="Int64" Nullable="false" />
+    <Property Name="TotalPrecio" Type="Double" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Tipo">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int64" Nullable="false" />
+    <Property Name="NombreTipo" Type="String" Nullable="false" MaxLength="90" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="Alimento" Relationship="dbAlimentacionGeoModel.FK__Alimento__itTipo__693CA210" FromRole="Tipo" ToRole="Alimento" />
+  </EntityType>
+  <EntityType Name="TipoAlimento">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int64" Nullable="false" />
+    <Property Name="NombreTipoAlimento" Type="String" Nullable="false" MaxLength="90" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="Alimento" Relationship="dbAlimentacionGeoModel.FK__Alimento__itTipo__6A30C649" FromRole="TipoAlimento" ToRole="Alimento" />
+  </EntityType>
+  <EntityType Name="TipoEmpresa">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int64" Nullable="false" />
+    <Property Name="NombreTipo" Type="String" Nullable="false" MaxLength="20" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="Empresa" Relationship="dbAlimentacionGeoModel.FK__Empresa__idTipo__7D439ABD" FromRole="TipoEmpresa" ToRole="Empresa" />
+  </EntityType>
+  <EntityType Name="Turno">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int64" Nullable="false" />
+    <Property Name="NombreTurno" Type="String" Nullable="false" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="HorarioIngreso" Type="Time" Nullable="false" Precision="7" />
+    <Property Name="HorarioSalida" Type="Time" Nullable="false" Precision="7" />
+    <NavigationProperty Name="Empleado" Relationship="dbAlimentacionGeoModel.FK__Empleado__idTurn__7A672E12" FromRole="Turno" ToRole="Empleado" />
+  </EntityType>
+  <EntityType Name="Usuario">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="NombreUsuario" Type="String" Nullable="false" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="Contraseña" Type="String" Nullable="false" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="idGrupo" Type="Int64" Nullable="false" />
+    <NavigationProperty Name="Bitacora" Relationship="dbAlimentacionGeoModel.FK__Bitacora__idUsua__6B24EA82" FromRole="Usuario" ToRole="Bitacora" />
+    <NavigationProperty Name="Empleado" Relationship="dbAlimentacionGeoModel.FK__Empleado__idUsua__7B5B524B" FromRole="Usuario" ToRole="Empleado" />
+    <NavigationProperty Name="Grupo" Relationship="dbAlimentacionGeoModel.FK__Usuario__idGrupo__37A5467C" FromRole="Usuario" ToRole="Grupo" />
+  </EntityType>
+  <EntityType Name="VCentroCosto">
+    <Key>
+      <PropertyRef Name="id" />
+      <PropertyRef Name="NombreCentroCosto" />
+      <PropertyRef Name="idArea" />
+      <PropertyRef Name="NombreArea" />
+    </Key>
+    <Property Name="id" Type="Int64" Nullable="false" />
+    <Property Name="NombreCentroCosto" Type="String" Nullable="false" MaxLength="90" FixedLength="false" Unicode="false" />
+    <Property Name="idArea" Type="Int64" Nullable="false" />
+    <Property Name="NombreArea" Type="String" Nullable="false" MaxLength="90" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="VDetalleEstadoServicio">
+    <Key>
+      <PropertyRef Name="idEmpleado" />
+      <PropertyRef Name="idProgramacion" />
+      <PropertyRef Name="FechaInicio" />
+      <PropertyRef Name="FechaFin" />
+      <PropertyRef Name="idOrdenServicio" />
+      <PropertyRef Name="idMenu" />
+      <PropertyRef Name="FechaMenu" />
+      <PropertyRef Name="idAlimento" />
+      <PropertyRef Name="NombreAlimento" />
+      <PropertyRef Name="idEstado" />
+    </Key>
+    <Property Name="idEmpleado" Type="Int64" Nullable="false" />
+    <Property Name="NombreCompleto" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="idProgramacion" Type="Int64" Nullable="false" />
+    <Property Name="FechaInicio" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="FechaFin" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="idOrdenServicio" Type="Int64" Nullable="false" />
+    <Property Name="idMenu" Type="Int64" Nullable="false" />
+    <Property Name="FechaMenu" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="idAlimento" Type="Int64" Nullable="false" />
+    <Property Name="NombreAlimento" Type="String" Nullable="false" MaxLength="90" FixedLength="false" Unicode="false" />
+    <Property Name="Observacion" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
+    <Property Name="idEstado" Type="Int64" Nullable="false" />
+    <Property Name="NombreEstado" Type="String" MaxLength="90" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="VDetalleProgramacion">
+    <Key>
+      <PropertyRef Name="idEmpleado" />
+      <PropertyRef Name="NombreArea" />
+      <PropertyRef Name="idProgramacion" />
+      <PropertyRef Name="FechaInicio" />
+      <PropertyRef Name="FechaFin" />
+      <PropertyRef Name="idEstado" />
+    </Key>
+    <Property Name="idEmpleado" Type="Int64" Nullable="false" />
+    <Property Name="NombreCompleto" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="NombreArea" Type="String" Nullable="false" MaxLength="90" FixedLength="false" Unicode="false" />
+    <Property Name="idProgramacion" Type="Int64" Nullable="false" />
+    <Property Name="FechaInicio" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="FechaFin" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="idEstado" Type="Int64" Nullable="false" />
+    <Property Name="NombreEstado" Type="String" MaxLength="90" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="VEmpleado">
+    <Key>
+      <PropertyRef Name="id" />
+      <PropertyRef Name="idEmpresa" />
+      <PropertyRef Name="RazonSocial" />
+      <PropertyRef Name="FechaIngreso" />
+      <PropertyRef Name="idCargo" />
+      <PropertyRef Name="NombreCargo" />
+      <PropertyRef Name="idArea" />
+      <PropertyRef Name="NombreArea" />
+      <PropertyRef Name="idCentroCosto" />
+      <PropertyRef Name="NombreCentroCosto" />
+      <PropertyRef Name="idTurno" />
+      <PropertyRef Name="NombreTurno" />
+      <PropertyRef Name="idUsuario" />
+      <PropertyRef Name="NombreUsuario" />
+    </Key>
+    <Property Name="id" Type="Int64" Nullable="false" />
+    <Property Name="NombreCompleto" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="idEmpresa" Type="Int64" Nullable="false" />
+    <Property Name="RazonSocial" Type="String" Nullable="false" MaxLength="90" FixedLength="false" Unicode="false" />
+    <Property Name="FechaIngreso" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="idCargo" Type="Int64" Nullable="false" />
+    <Property Name="NombreCargo" Type="String" Nullable="false" MaxLength="90" FixedLength="false" Unicode="false" />
+    <Property Name="idArea" Type="Int64" Nullable="false" />
+    <Property Name="NombreArea" Type="String" Nullable="false" MaxLength="90" FixedLength="false" Unicode="false" />
+    <Property Name="idCentroCosto" Type="Int64" Nullable="false" />
+    <Property Name="NombreCentroCosto" Type="String" Nullable="false" MaxLength="90" FixedLength="false" Unicode="false" />
+    <Property Name="idTurno" Type="Int64" Nullable="false" />
+    <Property Name="NombreTurno" Type="String" Nullable="false" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="idUsuario" Type="Int64" Nullable="false" />
+    <Property Name="NombreUsuario" Type="String" Nullable="false" MaxLength="20" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="VEmpleadoProgramacion">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int64" Nullable="false" />
+    <Property Name="NombreCompleto" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="VGrupoPerfil">
+    <Key>
+      <PropertyRef Name="idGrupo" />
+      <PropertyRef Name="NombreGrupo" />
+      <PropertyRef Name="idPerfil" />
+      <PropertyRef Name="NombrePerfil" />
+    </Key>
+    <Property Name="idGrupo" Type="Int64" Nullable="false" />
+    <Property Name="NombreGrupo" Type="String" Nullable="false" MaxLength="90" FixedLength="false" Unicode="false" />
+    <Property Name="idPerfil" Type="Int64" Nullable="false" />
+    <Property Name="NombrePerfil" Type="String" Nullable="false" MaxLength="90" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="VPerfil">
+    <Key>
+      <PropertyRef Name="id" />
+      <PropertyRef Name="NombrePerfil" />
+    </Key>
+    <Property Name="id" Type="Int64" Nullable="false" />
+    <Property Name="NombrePerfil" Type="String" Nullable="false" MaxLength="90" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <Association Name="FK__Alimento__itTipo__693CA210">
+    <End Type="dbAlimentacionGeoModel.Tipo" Role="Tipo" Multiplicity="1" />
+    <End Type="dbAlimentacionGeoModel.Alimento" Role="Alimento" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Tipo">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Alimento">
+        <PropertyRef Name="itTipo" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Alimento__itTipo__6A30C649">
+    <End Type="dbAlimentacionGeoModel.TipoAlimento" Role="TipoAlimento" Multiplicity="1" />
+    <End Type="dbAlimentacionGeoModel.Alimento" Role="Alimento" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TipoAlimento">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Alimento">
+        <PropertyRef Name="itTipoAlimento" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__DetalleAl__idAli__6D0D32F4">
+    <End Type="dbAlimentacionGeoModel.Alimento" Role="Alimento" Multiplicity="1" />
+    <End Type="dbAlimentacionGeoModel.DetalleAlimento" Role="DetalleAlimento" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Alimento">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="DetalleAlimento">
+        <PropertyRef Name="idAlimento" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Menu__idAlimento__00200768">
+    <End Type="dbAlimentacionGeoModel.Alimento" Role="Alimento" Multiplicity="1" />
+    <End Type="dbAlimentacionGeoModel.Menu" Role="Menu" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Alimento">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Menu">
+        <PropertyRef Name="idAlimento" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__CentroCos__idAre__6C190EBB">
+    <End Type="dbAlimentacionGeoModel.Area" Role="Area" Multiplicity="1" />
+    <End Type="dbAlimentacionGeoModel.CentroCosto" Role="CentroCosto" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Area">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="CentroCosto">
+        <PropertyRef Name="idArea" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Bitacora__idUsua__6B24EA82">
+    <End Type="dbAlimentacionGeoModel.Usuario" Role="Usuario" Multiplicity="1" />
+    <End Type="dbAlimentacionGeoModel.Bitacora" Role="Bitacora" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Usuario">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Bitacora">
+        <PropertyRef Name="idUsuario" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Empleado__idCarg__787EE5A0">
+    <End Type="dbAlimentacionGeoModel.Cargo" Role="Cargo" Multiplicity="1" />
+    <End Type="dbAlimentacionGeoModel.Empleado" Role="Empleado" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Cargo">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Empleado">
+        <PropertyRef Name="idCargo" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Empleado__76969D2E">
+    <End Type="dbAlimentacionGeoModel.CentroCosto" Role="CentroCosto" Multiplicity="1" />
+    <End Type="dbAlimentacionGeoModel.Empleado" Role="Empleado" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CentroCosto">
+        <PropertyRef Name="idArea" />
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Empleado">
+        <PropertyRef Name="idArea" />
+        <PropertyRef Name="idCentroCosto" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__DetalleAl__idIng__6E01572D">
+    <End Type="dbAlimentacionGeoModel.Ingrediente" Role="Ingrediente" Multiplicity="1" />
+    <End Type="dbAlimentacionGeoModel.DetalleAlimento" Role="DetalleAlimento" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Ingrediente">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="DetalleAlimento">
+        <PropertyRef Name="idIngrediente" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__DetalleEs__idEmp__6EF57B66">
+    <End Type="dbAlimentacionGeoModel.Empleado" Role="Empleado" Multiplicity="1" />
+    <End Type="dbAlimentacionGeoModel.DetalleEstado" Role="DetalleEstado" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Empleado">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="DetalleEstado">
+        <PropertyRef Name="idEmpleado" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__DetalleEs__idEst__6FE99F9F">
+    <End Type="dbAlimentacionGeoModel.EstadoEmpleado" Role="EstadoEmpleado" Multiplicity="1" />
+    <End Type="dbAlimentacionGeoModel.DetalleEstado" Role="DetalleEstado" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="EstadoEmpleado">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="DetalleEstado">
+        <PropertyRef Name="idEstado" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__DetalleEs__idEst__70DDC3D8">
+    <End Type="dbAlimentacionGeoModel.Estado" Role="Estado" Multiplicity="1" />
+    <End Type="dbAlimentacionGeoModel.DetalleEstadoServicio" Role="DetalleEstadoServicio" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Estado">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="DetalleEstadoServicio">
+        <PropertyRef Name="idEstado" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__DetalleEs__idOrd__71D1E811">
+    <End Type="dbAlimentacionGeoModel.OrdenServicio" Role="OrdenServicio" Multiplicity="1" />
+    <End Type="dbAlimentacionGeoModel.DetalleEstadoServicio" Role="DetalleEstadoServicio" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="OrdenServicio">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="DetalleEstadoServicio">
+        <PropertyRef Name="idOrdenServicio" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__DetalleEstadoSer__72C60C4A">
+    <End Type="dbAlimentacionGeoModel.DetalleProgramacion" Role="DetalleProgramacion" Multiplicity="1" />
+    <End Type="dbAlimentacionGeoModel.DetalleEstadoServicio" Role="DetalleEstadoServicio" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="DetalleProgramacion">
+        <PropertyRef Name="idEmpleado" />
+        <PropertyRef Name="idProgramacion" />
+      </Principal>
+      <Dependent Role="DetalleEstadoServicio">
+        <PropertyRef Name="idEmpleado" />
+        <PropertyRef Name="idProgramacion" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__DetallePr__idEmp__73BA3083">
+    <End Type="dbAlimentacionGeoModel.Empleado" Role="Empleado" Multiplicity="1" />
+    <End Type="dbAlimentacionGeoModel.DetalleProgramacion" Role="DetalleProgramacion" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Empleado">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="DetalleProgramacion">
+        <PropertyRef Name="idEmpleado" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__DetallePr__idEst__74AE54BC">
+    <End Type="dbAlimentacionGeoModel.Estado" Role="Estado" Multiplicity="1" />
+    <End Type="dbAlimentacionGeoModel.DetalleProgramacion" Role="DetalleProgramacion" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Estado">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="DetalleProgramacion">
+        <PropertyRef Name="idEstado" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__DetallePr__idPro__75A278F5">
+    <End Type="dbAlimentacionGeoModel.Programacion" Role="Programacion" Multiplicity="1" />
+    <End Type="dbAlimentacionGeoModel.DetalleProgramacion" Role="DetalleProgramacion" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Programacion">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="DetalleProgramacion">
+        <PropertyRef Name="idProgramacion" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Empleado__id__778AC167">
+    <End Type="dbAlimentacionGeoModel.Persona" Role="Persona" Multiplicity="1" />
+    <End Type="dbAlimentacionGeoModel.Empleado" Role="Empleado" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="Persona">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Empleado">
+        <PropertyRef Name="id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Empleado__idEmpr__797309D9">
+    <End Type="dbAlimentacionGeoModel.Empresa" Role="Empresa" Multiplicity="1" />
+    <End Type="dbAlimentacionGeoModel.Empleado" Role="Empleado" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Empresa">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Empleado">
+        <PropertyRef Name="idEmpresa" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Empleado__idTurn__7A672E12">
+    <End Type="dbAlimentacionGeoModel.Turno" Role="Turno" Multiplicity="1" />
+    <End Type="dbAlimentacionGeoModel.Empleado" Role="Empleado" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Turno">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Empleado">
+        <PropertyRef Name="idTurno" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Empleado__idUsua__7B5B524B">
+    <End Type="dbAlimentacionGeoModel.Usuario" Role="Usuario" Multiplicity="1" />
+    <End Type="dbAlimentacionGeoModel.Empleado" Role="Empleado" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Usuario">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Empleado">
+        <PropertyRef Name="idUsuario" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Empresa__idRubro__7C4F7684">
+    <End Type="dbAlimentacionGeoModel.Rubro" Role="Rubro" Multiplicity="1" />
+    <End Type="dbAlimentacionGeoModel.Empresa" Role="Empresa" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Rubro">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Empresa">
+        <PropertyRef Name="idRubro" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Empresa__idTipo__7D439ABD">
+    <End Type="dbAlimentacionGeoModel.TipoEmpresa" Role="TipoEmpresa" Multiplicity="1" />
+    <End Type="dbAlimentacionGeoModel.Empresa" Role="Empresa" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TipoEmpresa">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Empresa">
+        <PropertyRef Name="idTipo" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Represent__idEmp__02084FDA">
+    <End Type="dbAlimentacionGeoModel.Empresa" Role="Empresa" Multiplicity="1" />
+    <End Type="dbAlimentacionGeoModel.RepresentanteLegal" Role="RepresentanteLegal" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Empresa">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="RepresentanteLegal">
+        <PropertyRef Name="idEmpresa" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__GrupoPerf__idGru__7E37BEF6">
+    <End Type="dbAlimentacionGeoModel.Grupo" Role="Grupo" Multiplicity="1" />
+    <End Type="dbAlimentacionGeoModel.GrupoPerfil" Role="GrupoPerfil" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Grupo">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="GrupoPerfil">
+        <PropertyRef Name="idGrupo" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Usuario__idGrupo__37A5467C">
+    <End Type="dbAlimentacionGeoModel.Grupo" Role="Grupo" Multiplicity="1" />
+    <End Type="dbAlimentacionGeoModel.Usuario" Role="Usuario" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Grupo">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Usuario">
+        <PropertyRef Name="idGrupo" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__GrupoPerf__idPer__7F2BE32F">
+    <End Type="dbAlimentacionGeoModel.Perfil" Role="Perfil" Multiplicity="1" />
+    <End Type="dbAlimentacionGeoModel.GrupoPerfil" Role="GrupoPerfil" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Perfil">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="GrupoPerfil">
+        <PropertyRef Name="idPerfil" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__OrdenServ__idMen__01142BA1">
+    <End Type="dbAlimentacionGeoModel.Menu" Role="Menu" Multiplicity="1" />
+    <End Type="dbAlimentacionGeoModel.OrdenServicio" Role="OrdenServicio" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Menu">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="OrdenServicio">
+        <PropertyRef Name="idMenu" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Representant__id__02FC7413">
+    <End Type="dbAlimentacionGeoModel.Persona" Role="Persona" Multiplicity="1" />
+    <End Type="dbAlimentacionGeoModel.RepresentanteLegal" Role="RepresentanteLegal" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="Persona">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="RepresentanteLegal">
+        <PropertyRef Name="id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="VAlimentoProgramacion">
+    <Key>
+      <PropertyRef Name="id" />
+      <PropertyRef Name="NombreAlimento" />
+      <PropertyRef Name="FechaMenu" />
+    </Key>
+    <Property Name="id" Type="Int64" Nullable="false" />
+    <Property Name="NombreAlimento" Type="String" Nullable="false" MaxLength="90" FixedLength="false" Unicode="false" />
+    <Property Name="FechaMenu" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="Cantidad" Type="Double" />
+    <Property Name="Precio" Type="Double" />
+  </EntityType>
+</Schema>

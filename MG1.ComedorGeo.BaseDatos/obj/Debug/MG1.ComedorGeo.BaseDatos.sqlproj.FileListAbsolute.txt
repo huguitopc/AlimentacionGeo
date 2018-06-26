@@ -1,0 +1,27 @@
+D:\UPDS\Modalidad de Grado I\Proyecto\MG1.ComedorGeo.BaseDatos\bin\Debug\MG1.ComedorGeo.BaseDatos.dacpac
+D:\UPDS\Modalidad de Grado I\Proyecto\MG1.ComedorGeo.BaseDatos\bin\Debug\MG1.ComedorGeo.BaseDatos.dll
+D:\UPDS\Modalidad de Grado I\Proyecto\MG1.ComedorGeo.BaseDatos\bin\Debug\MG1.ComedorGeo.BaseDatos.pdb
+D:\UPDS\Modalidad de Grado I\Proyecto\MG1.ComedorGeo.BaseDatos\obj\Debug\Model.xml
+D:\UPDS\Modalidad de Grado I\Proyecto\MG1.ComedorGeo.BaseDatos\obj\Debug\refactor.xml
+D:\UPDS\Modalidad de Grado I\Proyecto\MG1.ComedorGeo.BaseDatos\obj\Debug\postdeploy.sql
+D:\UPDS\Modalidad de Grado I\Proyecto\MG1.ComedorGeo.BaseDatos\obj\Debug\predeploy.sql
+D:\UPDS\Modalidad de Grado I\Proyecto\MG1.ComedorGeo.BaseDatos\obj\Debug\MG1.ComedorGeo.BaseDatos.dll
+D:\UPDS\Modalidad de Grado I\Proyecto\MG1.ComedorGeo.BaseDatos\obj\Debug\MG1.ComedorGeo.BaseDatos.pdb
+I:\UPDS\Modalidad_de_Grado_I\Proyecto\MG1.ComedorGeo.BaseDatos\bin\Debug\MG1.ComedorGeo.BaseDatos.dacpac
+I:\UPDS\Modalidad_de_Grado_I\Proyecto\MG1.ComedorGeo.BaseDatos\bin\Debug\MG1.ComedorGeo.BaseDatos.dll
+I:\UPDS\Modalidad_de_Grado_I\Proyecto\MG1.ComedorGeo.BaseDatos\bin\Debug\MG1.ComedorGeo.BaseDatos.pdb
+I:\UPDS\Modalidad_de_Grado_I\Proyecto\MG1.ComedorGeo.BaseDatos\obj\Debug\Model.xml
+I:\UPDS\Modalidad_de_Grado_I\Proyecto\MG1.ComedorGeo.BaseDatos\obj\Debug\refactor.xml
+I:\UPDS\Modalidad_de_Grado_I\Proyecto\MG1.ComedorGeo.BaseDatos\obj\Debug\postdeploy.sql
+I:\UPDS\Modalidad_de_Grado_I\Proyecto\MG1.ComedorGeo.BaseDatos\obj\Debug\predeploy.sql
+I:\UPDS\Modalidad_de_Grado_I\Proyecto\MG1.ComedorGeo.BaseDatos\obj\Debug\MG1.ComedorGeo.BaseDatos.dll
+I:\UPDS\Modalidad_de_Grado_I\Proyecto\MG1.ComedorGeo.BaseDatos\obj\Debug\MG1.ComedorGeo.BaseDatos.pdb
+D:\UPDS\Modalidad_de_Grado_I\Proyecto\MG1.ComedorGeo.BaseDatos\bin\Debug\MG1.ComedorGeo.BaseDatos.dacpac
+D:\UPDS\Modalidad_de_Grado_I\Proyecto\MG1.ComedorGeo.BaseDatos\bin\Debug\MG1.ComedorGeo.BaseDatos.dll
+D:\UPDS\Modalidad_de_Grado_I\Proyecto\MG1.ComedorGeo.BaseDatos\bin\Debug\MG1.ComedorGeo.BaseDatos.pdb
+D:\UPDS\Modalidad_de_Grado_I\Proyecto\MG1.ComedorGeo.BaseDatos\obj\Debug\Model.xml
+D:\UPDS\Modalidad_de_Grado_I\Proyecto\MG1.ComedorGeo.BaseDatos\obj\Debug\refactor.xml
+D:\UPDS\Modalidad_de_Grado_I\Proyecto\MG1.ComedorGeo.BaseDatos\obj\Debug\postdeploy.sql
+D:\UPDS\Modalidad_de_Grado_I\Proyecto\MG1.ComedorGeo.BaseDatos\obj\Debug\predeploy.sql
+D:\UPDS\Modalidad_de_Grado_I\Proyecto\MG1.ComedorGeo.BaseDatos\obj\Debug\MG1.ComedorGeo.BaseDatos.dll
+D:\UPDS\Modalidad_de_Grado_I\Proyecto\MG1.ComedorGeo.BaseDatos\obj\Debug\MG1.ComedorGeo.BaseDatos.pdb

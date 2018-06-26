@@ -1,0 +1,24 @@
+I:\UPDS\Modalidad_de_Grado_I\Proyecto\MG1.ComedorGeo.Datos\bin\Debug\MG1.ComedorGeo.Datos.dll.config
+I:\UPDS\Modalidad_de_Grado_I\Proyecto\MG1.ComedorGeo.Datos\bin\Debug\MG1.ComedorGeo.Datos.dll
+I:\UPDS\Modalidad_de_Grado_I\Proyecto\MG1.ComedorGeo.Datos\bin\Debug\MG1.ComedorGeo.Datos.pdb
+I:\UPDS\Modalidad_de_Grado_I\Proyecto\MG1.ComedorGeo.Datos\bin\Debug\EntityFramework.dll
+I:\UPDS\Modalidad_de_Grado_I\Proyecto\MG1.ComedorGeo.Datos\bin\Debug\EntityFramework.xml
+I:\UPDS\Modalidad_de_Grado_I\Proyecto\MG1.ComedorGeo.Datos\obj\Debug\MG1.ComedorGeo.Datos.csprojResolveAssemblyReference.cache
+I:\UPDS\Modalidad_de_Grado_I\Proyecto\MG1.ComedorGeo.Datos\obj\Debug\MG1.ComedorGeo.Datos.dll
+I:\UPDS\Modalidad_de_Grado_I\Proyecto\MG1.ComedorGeo.Datos\obj\Debug\MG1.ComedorGeo.Datos.pdb
+D:\UPDS\Modalidad_de_Grado_I\Proyecto\MG1.ComedorGeo.Datos\bin\Debug\MG1.ComedorGeo.Datos.dll.config
+D:\UPDS\Modalidad_de_Grado_I\Proyecto\MG1.ComedorGeo.Datos\bin\Debug\MG1.ComedorGeo.Datos.dll
+D:\UPDS\Modalidad_de_Grado_I\Proyecto\MG1.ComedorGeo.Datos\bin\Debug\MG1.ComedorGeo.Datos.pdb
+D:\UPDS\Modalidad_de_Grado_I\Proyecto\MG1.ComedorGeo.Datos\bin\Debug\EntityFramework.dll
+D:\UPDS\Modalidad_de_Grado_I\Proyecto\MG1.ComedorGeo.Datos\bin\Debug\EntityFramework.xml
+D:\UPDS\Modalidad_de_Grado_I\Proyecto\MG1.ComedorGeo.Datos\obj\Debug\MG1.ComedorGeo.Datos.csprojResolveAssemblyReference.cache
+D:\UPDS\Modalidad_de_Grado_I\Proyecto\MG1.ComedorGeo.Datos\obj\Debug\MG1.ComedorGeo.Datos.dll
+D:\UPDS\Modalidad_de_Grado_I\Proyecto\MG1.ComedorGeo.Datos\obj\Debug\MG1.ComedorGeo.Datos.pdb
+E:\Proyecto de Grado 2017\AlexPereira\Proyecto\MG1.ComedorGeo.Datos\bin\Debug\MG1.ComedorGeo.Datos.dll.config
+E:\Proyecto de Grado 2017\AlexPereira\Proyecto\MG1.ComedorGeo.Datos\bin\Debug\MG1.ComedorGeo.Datos.dll
+E:\Proyecto de Grado 2017\AlexPereira\Proyecto\MG1.ComedorGeo.Datos\bin\Debug\MG1.ComedorGeo.Datos.pdb
+E:\Proyecto de Grado 2017\AlexPereira\Proyecto\MG1.ComedorGeo.Datos\bin\Debug\EntityFramework.dll
+E:\Proyecto de Grado 2017\AlexPereira\Proyecto\MG1.ComedorGeo.Datos\bin\Debug\EntityFramework.xml
+E:\Proyecto de Grado 2017\AlexPereira\Proyecto\MG1.ComedorGeo.Datos\obj\Debug\MG1.ComedorGeo.Datos.csprojResolveAssemblyReference.cache
+E:\Proyecto de Grado 2017\AlexPereira\Proyecto\MG1.ComedorGeo.Datos\obj\Debug\MG1.ComedorGeo.Datos.dll
+E:\Proyecto de Grado 2017\AlexPereira\Proyecto\MG1.ComedorGeo.Datos\obj\Debug\MG1.ComedorGeo.Datos.pdb

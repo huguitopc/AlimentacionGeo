@@ -1,0 +1,1010 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="dbAlimentacionGeoModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Alimento">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="bigint" Nullable="false" />
+    <Property Name="NombreAlimento" Type="varchar" MaxLength="90" Nullable="false" />
+    <Property Name="Precio" Type="float" />
+    <Property Name="Cantidad" Type="float" />
+    <Property Name="itTipo" Type="bigint" Nullable="false" />
+    <Property Name="itTipoAlimento" Type="bigint" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Area">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="bigint" Nullable="false" />
+    <Property Name="NombreArea" Type="varchar" MaxLength="90" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Bitacora">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Transaccion" Type="varchar" MaxLength="50" />
+    <Property Name="Tabla" Type="varchar" MaxLength="50" />
+    <Property Name="idTabla" Type="bigint" />
+    <Property Name="idUsuario" Type="bigint" Nullable="false" />
+    <Property Name="nombreUsuario" Type="varchar" MaxLength="50" />
+    <Property Name="Host" Type="varchar" MaxLength="50" />
+    <Property Name="Aplicacion" Type="varchar" MaxLength="100" />
+    <Property Name="Modificado" Type="datetime" />
+  </EntityType>
+  <EntityType Name="Cargo">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="bigint" Nullable="false" />
+    <Property Name="NombreCargo" Type="varchar" MaxLength="90" Nullable="false" />
+  </EntityType>
+  <EntityType Name="CentroCosto">
+    <Key>
+      <PropertyRef Name="id" />
+      <PropertyRef Name="idArea" />
+    </Key>
+    <Property Name="id" Type="bigint" Nullable="false" />
+    <Property Name="NombreCentroCosto" Type="varchar" MaxLength="90" Nullable="false" />
+    <Property Name="idArea" Type="bigint" Nullable="false" />
+  </EntityType>
+  <EntityType Name="DetalleAlimento">
+    <Key>
+      <PropertyRef Name="idAlimento" />
+      <PropertyRef Name="idIngrediente" />
+    </Key>
+    <Property Name="idAlimento" Type="bigint" Nullable="false" />
+    <Property Name="idIngrediente" Type="bigint" Nullable="false" />
+    <Property Name="Porcion" Type="float" Nullable="false" />
+    <Property Name="TotalCalorias" Type="float" />
+  </EntityType>
+  <EntityType Name="DetalleEstado">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="idEmpleado" Type="bigint" Nullable="false" />
+    <Property Name="idEstado" Type="bigint" Nullable="false" />
+    <Property Name="FechaInicio" Type="datetime" Nullable="false" />
+    <Property Name="FechaFin" Type="datetime" />
+  </EntityType>
+  <EntityType Name="DetalleEstadoServicio">
+    <Key>
+      <PropertyRef Name="idEmpleado" />
+      <PropertyRef Name="idProgramacion" />
+      <PropertyRef Name="idOrdenServicio" />
+    </Key>
+    <Property Name="idEmpleado" Type="bigint" Nullable="false" />
+    <Property Name="idProgramacion" Type="bigint" Nullable="false" />
+    <Property Name="idOrdenServicio" Type="bigint" Nullable="false" />
+    <Property Name="idEstado" Type="bigint" Nullable="false" />
+  </EntityType>
+  <EntityType Name="DetalleProgramacion">
+    <Key>
+      <PropertyRef Name="idEmpleado" />
+      <PropertyRef Name="idProgramacion" />
+    </Key>
+    <Property Name="idEmpleado" Type="bigint" Nullable="false" />
+    <Property Name="idProgramacion" Type="bigint" Nullable="false" />
+    <Property Name="idEstado" Type="bigint" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Empleado">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="bigint" Nullable="false" />
+    <Property Name="idEmpresa" Type="bigint" Nullable="false" />
+    <Property Name="idCargo" Type="bigint" Nullable="false" />
+    <Property Name="idArea" Type="bigint" Nullable="false" />
+    <Property Name="idCentroCosto" Type="bigint" Nullable="false" />
+    <Property Name="FechaIngreso" Type="datetime" Nullable="false" />
+    <Property Name="idTurno" Type="bigint" Nullable="false" />
+    <Property Name="idUsuario" Type="bigint" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Empresa">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="bigint" Nullable="false" />
+    <Property Name="RazonSocial" Type="varchar" MaxLength="90" Nullable="false" />
+    <Property Name="Nit" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="Direccion" Type="varchar" MaxLength="90" Nullable="false" />
+    <Property Name="Telefono" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="idRubro" Type="bigint" Nullable="false" />
+    <Property Name="idTipo" Type="bigint" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Estado">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="bigint" Nullable="false" />
+    <Property Name="NombreEstado" Type="varchar" MaxLength="90" />
+  </EntityType>
+  <EntityType Name="EstadoEmpleado">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="bigint" Nullable="false" />
+    <Property Name="NombreEstado" Type="varchar" MaxLength="90" Nullable="false" />
+    <Property Name="DescripcionEstado" Type="varchar" MaxLength="90" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Grupo">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="bigint" Nullable="false" />
+    <Property Name="NombreGrupo" Type="varchar" MaxLength="90" Nullable="false" />
+  </EntityType>
+  <EntityType Name="GrupoPerfil">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="bigint" Nullable="false" />
+    <Property Name="idGrupo" Type="bigint" Nullable="false" />
+    <Property Name="idPerfil" Type="bigint" Nullable="false" />
+    <Property Name="Flag" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Ingrediente">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="bigint" Nullable="false" />
+    <Property Name="NombreIngrediente" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Calorias" Type="float" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Menu">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="bigint" Nullable="false" />
+    <Property Name="FechaMenu" Type="datetime" Nullable="false" />
+    <Property Name="idAlimento" Type="bigint" Nullable="false" />
+  </EntityType>
+  <EntityType Name="OrdenServicio">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="bigint" Nullable="false" />
+    <Property Name="Observacion" Type="varchar" MaxLength="250" />
+    <Property Name="idMenu" Type="bigint" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Perfil">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="bigint" Nullable="false" />
+    <Property Name="NombrePerfil" Type="varchar" MaxLength="90" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Persona">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="bigint" Nullable="false" />
+    <Property Name="NombrePersona" Type="varchar" MaxLength="90" Nullable="false" />
+    <Property Name="ApellidoPaterno" Type="varchar" MaxLength="90" Nullable="false" />
+    <Property Name="ApellidoMaterno" Type="varchar" MaxLength="90" Nullable="false" />
+    <Property Name="Sexo" Type="char" MaxLength="1" Nullable="false" />
+    <Property Name="FechaNacimiento" Type="datetime" Nullable="false" />
+    <Property Name="DocumentoIdentidad" Type="bigint" Nullable="false" />
+    <Property Name="NombreCompleto" Type="varchar" MaxLength="200" />
+  </EntityType>
+  <EntityType Name="Programacion">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="bigint" Nullable="false" />
+    <Property Name="FechaInicio" Type="datetime" Nullable="false" />
+    <Property Name="FechaFin" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="RepresentanteLegal">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="bigint" Nullable="false" />
+    <Property Name="Poder" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="idEmpresa" Type="bigint" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Rubro">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="bigint" Nullable="false" />
+    <Property Name="NombreRubro" Type="varchar" MaxLength="30" Nullable="false" />
+    <Property Name="DescripcionRubro" Type="varchar" MaxLength="90" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TBResumenAlimentacion">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="bigint" Nullable="false" />
+    <Property Name="FechaAlimentacion" Type="datetime" Nullable="false" />
+    <Property Name="CodigoEmpleado" Type="bigint" Nullable="false" />
+    <Property Name="NombreEmpleado" Type="varchar" MaxLength="90" Nullable="false" />
+    <Property Name="Cargo" Type="varchar" MaxLength="90" Nullable="false" />
+    <Property Name="CentroCosto" Type="varchar" MaxLength="90" Nullable="false" />
+    <Property Name="Area" Type="varchar" MaxLength="90" Nullable="false" />
+    <Property Name="TipoMenu" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Plato" Type="varchar" MaxLength="90" Nullable="false" />
+    <Property Name="CaloriasPlato" Type="bigint" Nullable="false" />
+    <Property Name="Bebida" Type="varchar" MaxLength="90" Nullable="false" />
+    <Property Name="CaloriasBebida" Type="bigint" Nullable="false" />
+    <Property Name="Postre" Type="varchar" MaxLength="90" Nullable="false" />
+    <Property Name="CaloriasPostre" Type="bigint" Nullable="false" />
+    <Property Name="TotalPrecio" Type="float" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Tipo">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="bigint" Nullable="false" />
+    <Property Name="NombreTipo" Type="varchar" MaxLength="90" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TipoAlimento">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="bigint" Nullable="false" />
+    <Property Name="NombreTipoAlimento" Type="varchar" MaxLength="90" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TipoEmpresa">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="bigint" Nullable="false" />
+    <Property Name="NombreTipo" Type="varchar" MaxLength="20" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Turno">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="bigint" Nullable="false" />
+    <Property Name="NombreTurno" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="HorarioIngreso" Type="time" Precision="7" Nullable="false" />
+    <Property Name="HorarioSalida" Type="time" Precision="7" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Usuario">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="NombreUsuario" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="Contraseña" Type="varchar" MaxLength="10" Nullable="false" />
+    <Property Name="idGrupo" Type="bigint" Nullable="false" />
+  </EntityType>
+  <!--Errores durante la generación:
+advertencia 6002: La tabla o vista 'dbAlimentacionGeo.dbo.VAlimentoProgramacion' no tiene definida ninguna clave principal. Se ha inferido la clave y la definición se creado como una vista o tabla de solo lectura.-->
+  <EntityType Name="VAlimentoProgramacion">
+    <Key>
+      <PropertyRef Name="id" />
+      <PropertyRef Name="NombreAlimento" />
+      <PropertyRef Name="FechaMenu" />
+    </Key>
+    <Property Name="id" Type="bigint" Nullable="false" />
+    <Property Name="NombreAlimento" Type="varchar" MaxLength="90" Nullable="false" />
+    <Property Name="FechaMenu" Type="datetime" Nullable="false" />
+    <Property Name="Cantidad" Type="float" />
+    <Property Name="Precio" Type="float" />
+  </EntityType>
+  <!--Errores durante la generación:
+advertencia 6002: La tabla o vista 'dbAlimentacionGeo.dbo.VCentroCosto' no tiene definida ninguna clave principal. Se ha inferido la clave y la definición se creado como una vista o tabla de solo lectura.-->
+  <EntityType Name="VCentroCosto">
+    <Key>
+      <PropertyRef Name="id" />
+      <PropertyRef Name="NombreCentroCosto" />
+      <PropertyRef Name="idArea" />
+      <PropertyRef Name="NombreArea" />
+    </Key>
+    <Property Name="id" Type="bigint" Nullable="false" />
+    <Property Name="NombreCentroCosto" Type="varchar" MaxLength="90" Nullable="false" />
+    <Property Name="idArea" Type="bigint" Nullable="false" />
+    <Property Name="NombreArea" Type="varchar" MaxLength="90" Nullable="false" />
+  </EntityType>
+  <!--Errores durante la generación:
+advertencia 6002: La tabla o vista 'dbAlimentacionGeo.dbo.VDetalleEstadoServicio' no tiene definida ninguna clave principal. Se ha inferido la clave y la definición se creado como una vista o tabla de solo lectura.-->
+  <EntityType Name="VDetalleEstadoServicio">
+    <Key>
+      <PropertyRef Name="idEmpleado" />
+      <PropertyRef Name="idProgramacion" />
+      <PropertyRef Name="FechaInicio" />
+      <PropertyRef Name="FechaFin" />
+      <PropertyRef Name="idOrdenServicio" />
+      <PropertyRef Name="idMenu" />
+      <PropertyRef Name="FechaMenu" />
+      <PropertyRef Name="idAlimento" />
+      <PropertyRef Name="NombreAlimento" />
+      <PropertyRef Name="idEstado" />
+    </Key>
+    <Property Name="idEmpleado" Type="bigint" Nullable="false" />
+    <Property Name="NombreCompleto" Type="varchar" MaxLength="200" />
+    <Property Name="idProgramacion" Type="bigint" Nullable="false" />
+    <Property Name="FechaInicio" Type="datetime" Nullable="false" />
+    <Property Name="FechaFin" Type="datetime" Nullable="false" />
+    <Property Name="idOrdenServicio" Type="bigint" Nullable="false" />
+    <Property Name="idMenu" Type="bigint" Nullable="false" />
+    <Property Name="FechaMenu" Type="datetime" Nullable="false" />
+    <Property Name="idAlimento" Type="bigint" Nullable="false" />
+    <Property Name="NombreAlimento" Type="varchar" MaxLength="90" Nullable="false" />
+    <Property Name="Observacion" Type="varchar" MaxLength="250" />
+    <Property Name="idEstado" Type="bigint" Nullable="false" />
+    <Property Name="NombreEstado" Type="varchar" MaxLength="90" />
+  </EntityType>
+  <!--Errores durante la generación:
+advertencia 6002: La tabla o vista 'dbAlimentacionGeo.dbo.VDetalleProgramacion' no tiene definida ninguna clave principal. Se ha inferido la clave y la definición se creado como una vista o tabla de solo lectura.-->
+  <EntityType Name="VDetalleProgramacion">
+    <Key>
+      <PropertyRef Name="idEmpleado" />
+      <PropertyRef Name="NombreArea" />
+      <PropertyRef Name="idProgramacion" />
+      <PropertyRef Name="FechaInicio" />
+      <PropertyRef Name="FechaFin" />
+      <PropertyRef Name="idEstado" />
+    </Key>
+    <Property Name="idEmpleado" Type="bigint" Nullable="false" />
+    <Property Name="NombreCompleto" Type="varchar" MaxLength="200" />
+    <Property Name="NombreArea" Type="varchar" MaxLength="90" Nullable="false" />
+    <Property Name="idProgramacion" Type="bigint" Nullable="false" />
+    <Property Name="FechaInicio" Type="datetime" Nullable="false" />
+    <Property Name="FechaFin" Type="datetime" Nullable="false" />
+    <Property Name="idEstado" Type="bigint" Nullable="false" />
+    <Property Name="NombreEstado" Type="varchar" MaxLength="90" />
+  </EntityType>
+  <!--Errores durante la generación:
+advertencia 6002: La tabla o vista 'dbAlimentacionGeo.dbo.VEmpleado' no tiene definida ninguna clave principal. Se ha inferido la clave y la definición se creado como una vista o tabla de solo lectura.-->
+  <EntityType Name="VEmpleado">
+    <Key>
+      <PropertyRef Name="id" />
+      <PropertyRef Name="idEmpresa" />
+      <PropertyRef Name="RazonSocial" />
+      <PropertyRef Name="FechaIngreso" />
+      <PropertyRef Name="idCargo" />
+      <PropertyRef Name="NombreCargo" />
+      <PropertyRef Name="idArea" />
+      <PropertyRef Name="NombreArea" />
+      <PropertyRef Name="idCentroCosto" />
+      <PropertyRef Name="NombreCentroCosto" />
+      <PropertyRef Name="idTurno" />
+      <PropertyRef Name="NombreTurno" />
+      <PropertyRef Name="idUsuario" />
+      <PropertyRef Name="NombreUsuario" />
+    </Key>
+    <Property Name="id" Type="bigint" Nullable="false" />
+    <Property Name="NombreCompleto" Type="varchar" MaxLength="200" />
+    <Property Name="idEmpresa" Type="bigint" Nullable="false" />
+    <Property Name="RazonSocial" Type="varchar" MaxLength="90" Nullable="false" />
+    <Property Name="FechaIngreso" Type="datetime" Nullable="false" />
+    <Property Name="idCargo" Type="bigint" Nullable="false" />
+    <Property Name="NombreCargo" Type="varchar" MaxLength="90" Nullable="false" />
+    <Property Name="idArea" Type="bigint" Nullable="false" />
+    <Property Name="NombreArea" Type="varchar" MaxLength="90" Nullable="false" />
+    <Property Name="idCentroCosto" Type="bigint" Nullable="false" />
+    <Property Name="NombreCentroCosto" Type="varchar" MaxLength="90" Nullable="false" />
+    <Property Name="idTurno" Type="bigint" Nullable="false" />
+    <Property Name="NombreTurno" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="idUsuario" Type="bigint" Nullable="false" />
+    <Property Name="NombreUsuario" Type="varchar" MaxLength="20" Nullable="false" />
+  </EntityType>
+  <!--Errores durante la generación:
+advertencia 6002: La tabla o vista 'dbAlimentacionGeo.dbo.VEmpleadoProgramacion' no tiene definida ninguna clave principal. Se ha inferido la clave y la definición se creado como una vista o tabla de solo lectura.-->
+  <EntityType Name="VEmpleadoProgramacion">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="bigint" Nullable="false" />
+    <Property Name="NombreCompleto" Type="varchar" MaxLength="200" />
+  </EntityType>
+  <!--Errores durante la generación:
+advertencia 6002: La tabla o vista 'dbAlimentacionGeo.dbo.VGrupoPerfil' no tiene definida ninguna clave principal. Se ha inferido la clave y la definición se creado como una vista o tabla de solo lectura.-->
+  <EntityType Name="VGrupoPerfil">
+    <Key>
+      <PropertyRef Name="idGrupo" />
+      <PropertyRef Name="NombreGrupo" />
+      <PropertyRef Name="idPerfil" />
+      <PropertyRef Name="NombrePerfil" />
+    </Key>
+    <Property Name="idGrupo" Type="bigint" Nullable="false" />
+    <Property Name="NombreGrupo" Type="varchar" MaxLength="90" Nullable="false" />
+    <Property Name="idPerfil" Type="bigint" Nullable="false" />
+    <Property Name="NombrePerfil" Type="varchar" MaxLength="90" Nullable="false" />
+  </EntityType>
+  <!--Errores durante la generación:
+advertencia 6002: La tabla o vista 'dbAlimentacionGeo.dbo.VPerfil' no tiene definida ninguna clave principal. Se ha inferido la clave y la definición se creado como una vista o tabla de solo lectura.-->
+  <EntityType Name="VPerfil">
+    <Key>
+      <PropertyRef Name="id" />
+      <PropertyRef Name="NombrePerfil" />
+    </Key>
+    <Property Name="id" Type="bigint" Nullable="false" />
+    <Property Name="NombrePerfil" Type="varchar" MaxLength="90" Nullable="false" />
+  </EntityType>
+  <Association Name="FK__Alimento__itTipo__693CA210">
+    <End Role="Tipo" Type="Self.Tipo" Multiplicity="1" />
+    <End Role="Alimento" Type="Self.Alimento" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Tipo">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Alimento">
+        <PropertyRef Name="itTipo" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Alimento__itTipo__6A30C649">
+    <End Role="TipoAlimento" Type="Self.TipoAlimento" Multiplicity="1" />
+    <End Role="Alimento" Type="Self.Alimento" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TipoAlimento">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Alimento">
+        <PropertyRef Name="itTipoAlimento" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Bitacora__idUsua__6B24EA82">
+    <End Role="Usuario" Type="Self.Usuario" Multiplicity="1" />
+    <End Role="Bitacora" Type="Self.Bitacora" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Usuario">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Bitacora">
+        <PropertyRef Name="idUsuario" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__CentroCos__idAre__6C190EBB">
+    <End Role="Area" Type="Self.Area" Multiplicity="1" />
+    <End Role="CentroCosto" Type="Self.CentroCosto" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Area">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="CentroCosto">
+        <PropertyRef Name="idArea" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__DetalleAl__idAli__6D0D32F4">
+    <End Role="Alimento" Type="Self.Alimento" Multiplicity="1" />
+    <End Role="DetalleAlimento" Type="Self.DetalleAlimento" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Alimento">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="DetalleAlimento">
+        <PropertyRef Name="idAlimento" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__DetalleAl__idIng__6E01572D">
+    <End Role="Ingrediente" Type="Self.Ingrediente" Multiplicity="1" />
+    <End Role="DetalleAlimento" Type="Self.DetalleAlimento" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Ingrediente">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="DetalleAlimento">
+        <PropertyRef Name="idIngrediente" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__DetalleEs__idEmp__6EF57B66">
+    <End Role="Empleado" Type="Self.Empleado" Multiplicity="1" />
+    <End Role="DetalleEstado" Type="Self.DetalleEstado" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Empleado">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="DetalleEstado">
+        <PropertyRef Name="idEmpleado" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__DetalleEs__idEst__6FE99F9F">
+    <End Role="EstadoEmpleado" Type="Self.EstadoEmpleado" Multiplicity="1" />
+    <End Role="DetalleEstado" Type="Self.DetalleEstado" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="EstadoEmpleado">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="DetalleEstado">
+        <PropertyRef Name="idEstado" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__DetalleEs__idEst__70DDC3D8">
+    <End Role="Estado" Type="Self.Estado" Multiplicity="1" />
+    <End Role="DetalleEstadoServicio" Type="Self.DetalleEstadoServicio" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Estado">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="DetalleEstadoServicio">
+        <PropertyRef Name="idEstado" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__DetalleEs__idOrd__71D1E811">
+    <End Role="OrdenServicio" Type="Self.OrdenServicio" Multiplicity="1" />
+    <End Role="DetalleEstadoServicio" Type="Self.DetalleEstadoServicio" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="OrdenServicio">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="DetalleEstadoServicio">
+        <PropertyRef Name="idOrdenServicio" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__DetalleEstadoSer__72C60C4A">
+    <End Role="DetalleProgramacion" Type="Self.DetalleProgramacion" Multiplicity="1" />
+    <End Role="DetalleEstadoServicio" Type="Self.DetalleEstadoServicio" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="DetalleProgramacion">
+        <PropertyRef Name="idEmpleado" />
+        <PropertyRef Name="idProgramacion" />
+      </Principal>
+      <Dependent Role="DetalleEstadoServicio">
+        <PropertyRef Name="idEmpleado" />
+        <PropertyRef Name="idProgramacion" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__DetallePr__idEmp__73BA3083">
+    <End Role="Empleado" Type="Self.Empleado" Multiplicity="1" />
+    <End Role="DetalleProgramacion" Type="Self.DetalleProgramacion" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Empleado">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="DetalleProgramacion">
+        <PropertyRef Name="idEmpleado" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__DetallePr__idEst__74AE54BC">
+    <End Role="Estado" Type="Self.Estado" Multiplicity="1" />
+    <End Role="DetalleProgramacion" Type="Self.DetalleProgramacion" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Estado">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="DetalleProgramacion">
+        <PropertyRef Name="idEstado" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__DetallePr__idPro__75A278F5">
+    <End Role="Programacion" Type="Self.Programacion" Multiplicity="1" />
+    <End Role="DetalleProgramacion" Type="Self.DetalleProgramacion" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Programacion">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="DetalleProgramacion">
+        <PropertyRef Name="idProgramacion" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Empleado__76969D2E">
+    <End Role="CentroCosto" Type="Self.CentroCosto" Multiplicity="1" />
+    <End Role="Empleado" Type="Self.Empleado" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CentroCosto">
+        <PropertyRef Name="idArea" />
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Empleado">
+        <PropertyRef Name="idArea" />
+        <PropertyRef Name="idCentroCosto" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Empleado__id__778AC167">
+    <End Role="Persona" Type="Self.Persona" Multiplicity="1" />
+    <End Role="Empleado" Type="Self.Empleado" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="Persona">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Empleado">
+        <PropertyRef Name="id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Empleado__idCarg__787EE5A0">
+    <End Role="Cargo" Type="Self.Cargo" Multiplicity="1" />
+    <End Role="Empleado" Type="Self.Empleado" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Cargo">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Empleado">
+        <PropertyRef Name="idCargo" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Empleado__idEmpr__797309D9">
+    <End Role="Empresa" Type="Self.Empresa" Multiplicity="1" />
+    <End Role="Empleado" Type="Self.Empleado" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Empresa">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Empleado">
+        <PropertyRef Name="idEmpresa" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Empleado__idTurn__7A672E12">
+    <End Role="Turno" Type="Self.Turno" Multiplicity="1" />
+    <End Role="Empleado" Type="Self.Empleado" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Turno">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Empleado">
+        <PropertyRef Name="idTurno" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Empleado__idUsua__7B5B524B">
+    <End Role="Usuario" Type="Self.Usuario" Multiplicity="1" />
+    <End Role="Empleado" Type="Self.Empleado" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Usuario">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Empleado">
+        <PropertyRef Name="idUsuario" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Empresa__idRubro__7C4F7684">
+    <End Role="Rubro" Type="Self.Rubro" Multiplicity="1" />
+    <End Role="Empresa" Type="Self.Empresa" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Rubro">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Empresa">
+        <PropertyRef Name="idRubro" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Empresa__idTipo__7D439ABD">
+    <End Role="TipoEmpresa" Type="Self.TipoEmpresa" Multiplicity="1" />
+    <End Role="Empresa" Type="Self.Empresa" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TipoEmpresa">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Empresa">
+        <PropertyRef Name="idTipo" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__GrupoPerf__idGru__7E37BEF6">
+    <End Role="Grupo" Type="Self.Grupo" Multiplicity="1" />
+    <End Role="GrupoPerfil" Type="Self.GrupoPerfil" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Grupo">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="GrupoPerfil">
+        <PropertyRef Name="idGrupo" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__GrupoPerf__idPer__7F2BE32F">
+    <End Role="Perfil" Type="Self.Perfil" Multiplicity="1" />
+    <End Role="GrupoPerfil" Type="Self.GrupoPerfil" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Perfil">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="GrupoPerfil">
+        <PropertyRef Name="idPerfil" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Menu__idAlimento__00200768">
+    <End Role="Alimento" Type="Self.Alimento" Multiplicity="1" />
+    <End Role="Menu" Type="Self.Menu" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Alimento">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Menu">
+        <PropertyRef Name="idAlimento" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__OrdenServ__idMen__01142BA1">
+    <End Role="Menu" Type="Self.Menu" Multiplicity="1" />
+    <End Role="OrdenServicio" Type="Self.OrdenServicio" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Menu">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="OrdenServicio">
+        <PropertyRef Name="idMenu" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Represent__idEmp__02084FDA">
+    <End Role="Empresa" Type="Self.Empresa" Multiplicity="1" />
+    <End Role="RepresentanteLegal" Type="Self.RepresentanteLegal" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Empresa">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="RepresentanteLegal">
+        <PropertyRef Name="idEmpresa" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Representant__id__02FC7413">
+    <End Role="Persona" Type="Self.Persona" Multiplicity="1" />
+    <End Role="RepresentanteLegal" Type="Self.RepresentanteLegal" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="Persona">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="RepresentanteLegal">
+        <PropertyRef Name="id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Usuario__idGrupo__37A5467C">
+    <End Role="Grupo" Type="Self.Grupo" Multiplicity="1" />
+    <End Role="Usuario" Type="Self.Usuario" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Grupo">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Usuario">
+        <PropertyRef Name="idGrupo" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Function Name="sp_ActualizarNombreCompletoCursor" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="sp_ActualizarTBResumenAlimentacion" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="sp_InsertarPerfilCursor" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="id" Type="bigint" Mode="In" />
+    <Parameter Name="idGrupo" Type="bigint" Mode="In" />
+    <Parameter Name="Flag" Type="int" Mode="In" />
+  </Function>
+  <EntityContainer Name="dbAlimentacionGeoModelStoreContainer">
+    <EntitySet Name="Alimento" EntityType="Self.Alimento" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Area" EntityType="Self.Area" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Bitacora" EntityType="Self.Bitacora" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Cargo" EntityType="Self.Cargo" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="CentroCosto" EntityType="Self.CentroCosto" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="DetalleAlimento" EntityType="Self.DetalleAlimento" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="DetalleEstado" EntityType="Self.DetalleEstado" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="DetalleEstadoServicio" EntityType="Self.DetalleEstadoServicio" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="DetalleProgramacion" EntityType="Self.DetalleProgramacion" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Empleado" EntityType="Self.Empleado" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Empresa" EntityType="Self.Empresa" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Estado" EntityType="Self.Estado" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="EstadoEmpleado" EntityType="Self.EstadoEmpleado" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Grupo" EntityType="Self.Grupo" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="GrupoPerfil" EntityType="Self.GrupoPerfil" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Ingrediente" EntityType="Self.Ingrediente" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Menu" EntityType="Self.Menu" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="OrdenServicio" EntityType="Self.OrdenServicio" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Perfil" EntityType="Self.Perfil" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Persona" EntityType="Self.Persona" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Programacion" EntityType="Self.Programacion" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="RepresentanteLegal" EntityType="Self.RepresentanteLegal" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Rubro" EntityType="Self.Rubro" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TBResumenAlimentacion" EntityType="Self.TBResumenAlimentacion" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Tipo" EntityType="Self.Tipo" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TipoAlimento" EntityType="Self.TipoAlimento" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TipoEmpresa" EntityType="Self.TipoEmpresa" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Turno" EntityType="Self.Turno" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Usuario" EntityType="Self.Usuario" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="VAlimentoProgramacion" EntityType="Self.VAlimentoProgramacion" store:Type="Views" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+[VAlimentoProgramacion].[id] AS [id], 
+[VAlimentoProgramacion].[NombreAlimento] AS [NombreAlimento], 
+[VAlimentoProgramacion].[FechaMenu] AS [FechaMenu], 
+[VAlimentoProgramacion].[Cantidad] AS [Cantidad], 
+[VAlimentoProgramacion].[Precio] AS [Precio]
+FROM [dbo].[VAlimentoProgramacion] AS [VAlimentoProgramacion]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="VCentroCosto" EntityType="Self.VCentroCosto" store:Type="Views" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+[VCentroCosto].[id] AS [id], 
+[VCentroCosto].[NombreCentroCosto] AS [NombreCentroCosto], 
+[VCentroCosto].[idArea] AS [idArea], 
+[VCentroCosto].[NombreArea] AS [NombreArea]
+FROM [dbo].[VCentroCosto] AS [VCentroCosto]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="VDetalleEstadoServicio" EntityType="Self.VDetalleEstadoServicio" store:Type="Views" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+[VDetalleEstadoServicio].[idEmpleado] AS [idEmpleado], 
+[VDetalleEstadoServicio].[NombreCompleto] AS [NombreCompleto], 
+[VDetalleEstadoServicio].[idProgramacion] AS [idProgramacion], 
+[VDetalleEstadoServicio].[FechaInicio] AS [FechaInicio], 
+[VDetalleEstadoServicio].[FechaFin] AS [FechaFin], 
+[VDetalleEstadoServicio].[idOrdenServicio] AS [idOrdenServicio], 
+[VDetalleEstadoServicio].[idMenu] AS [idMenu], 
+[VDetalleEstadoServicio].[FechaMenu] AS [FechaMenu], 
+[VDetalleEstadoServicio].[idAlimento] AS [idAlimento], 
+[VDetalleEstadoServicio].[NombreAlimento] AS [NombreAlimento], 
+[VDetalleEstadoServicio].[Observacion] AS [Observacion], 
+[VDetalleEstadoServicio].[idEstado] AS [idEstado], 
+[VDetalleEstadoServicio].[NombreEstado] AS [NombreEstado]
+FROM [dbo].[VDetalleEstadoServicio] AS [VDetalleEstadoServicio]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="VDetalleProgramacion" EntityType="Self.VDetalleProgramacion" store:Type="Views" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+[VDetalleProgramacion].[idEmpleado] AS [idEmpleado], 
+[VDetalleProgramacion].[NombreCompleto] AS [NombreCompleto], 
+[VDetalleProgramacion].[NombreArea] AS [NombreArea], 
+[VDetalleProgramacion].[idProgramacion] AS [idProgramacion], 
+[VDetalleProgramacion].[FechaInicio] AS [FechaInicio], 
+[VDetalleProgramacion].[FechaFin] AS [FechaFin], 
+[VDetalleProgramacion].[idEstado] AS [idEstado], 
+[VDetalleProgramacion].[NombreEstado] AS [NombreEstado]
+FROM [dbo].[VDetalleProgramacion] AS [VDetalleProgramacion]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="VEmpleado" EntityType="Self.VEmpleado" store:Type="Views" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+[VEmpleado].[id] AS [id], 
+[VEmpleado].[NombreCompleto] AS [NombreCompleto], 
+[VEmpleado].[idEmpresa] AS [idEmpresa], 
+[VEmpleado].[RazonSocial] AS [RazonSocial], 
+[VEmpleado].[FechaIngreso] AS [FechaIngreso], 
+[VEmpleado].[idCargo] AS [idCargo], 
+[VEmpleado].[NombreCargo] AS [NombreCargo], 
+[VEmpleado].[idArea] AS [idArea], 
+[VEmpleado].[NombreArea] AS [NombreArea], 
+[VEmpleado].[idCentroCosto] AS [idCentroCosto], 
+[VEmpleado].[NombreCentroCosto] AS [NombreCentroCosto], 
+[VEmpleado].[idTurno] AS [idTurno], 
+[VEmpleado].[NombreTurno] AS [NombreTurno], 
+[VEmpleado].[idUsuario] AS [idUsuario], 
+[VEmpleado].[NombreUsuario] AS [NombreUsuario]
+FROM [dbo].[VEmpleado] AS [VEmpleado]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="VEmpleadoProgramacion" EntityType="Self.VEmpleadoProgramacion" store:Type="Views" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+[VEmpleadoProgramacion].[id] AS [id], 
+[VEmpleadoProgramacion].[NombreCompleto] AS [NombreCompleto]
+FROM [dbo].[VEmpleadoProgramacion] AS [VEmpleadoProgramacion]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="VGrupoPerfil" EntityType="Self.VGrupoPerfil" store:Type="Views" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+[VGrupoPerfil].[idGrupo] AS [idGrupo], 
+[VGrupoPerfil].[NombreGrupo] AS [NombreGrupo], 
+[VGrupoPerfil].[idPerfil] AS [idPerfil], 
+[VGrupoPerfil].[NombrePerfil] AS [NombrePerfil]
+FROM [dbo].[VGrupoPerfil] AS [VGrupoPerfil]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="VPerfil" EntityType="Self.VPerfil" store:Type="Views" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+[VPerfil].[id] AS [id], 
+[VPerfil].[NombrePerfil] AS [NombrePerfil]
+FROM [dbo].[VPerfil] AS [VPerfil]</DefiningQuery>
+    </EntitySet>
+    <AssociationSet Name="FK__Alimento__itTipo__693CA210" Association="Self.FK__Alimento__itTipo__693CA210">
+      <End Role="Tipo" EntitySet="Tipo" />
+      <End Role="Alimento" EntitySet="Alimento" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Alimento__itTipo__6A30C649" Association="Self.FK__Alimento__itTipo__6A30C649">
+      <End Role="TipoAlimento" EntitySet="TipoAlimento" />
+      <End Role="Alimento" EntitySet="Alimento" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Bitacora__idUsua__6B24EA82" Association="Self.FK__Bitacora__idUsua__6B24EA82">
+      <End Role="Usuario" EntitySet="Usuario" />
+      <End Role="Bitacora" EntitySet="Bitacora" />
+    </AssociationSet>
+    <AssociationSet Name="FK__CentroCos__idAre__6C190EBB" Association="Self.FK__CentroCos__idAre__6C190EBB">
+      <End Role="Area" EntitySet="Area" />
+      <End Role="CentroCosto" EntitySet="CentroCosto" />
+    </AssociationSet>
+    <AssociationSet Name="FK__DetalleAl__idAli__6D0D32F4" Association="Self.FK__DetalleAl__idAli__6D0D32F4">
+      <End Role="Alimento" EntitySet="Alimento" />
+      <End Role="DetalleAlimento" EntitySet="DetalleAlimento" />
+    </AssociationSet>
+    <AssociationSet Name="FK__DetalleAl__idIng__6E01572D" Association="Self.FK__DetalleAl__idIng__6E01572D">
+      <End Role="Ingrediente" EntitySet="Ingrediente" />
+      <End Role="DetalleAlimento" EntitySet="DetalleAlimento" />
+    </AssociationSet>
+    <AssociationSet Name="FK__DetalleEs__idEmp__6EF57B66" Association="Self.FK__DetalleEs__idEmp__6EF57B66">
+      <End Role="Empleado" EntitySet="Empleado" />
+      <End Role="DetalleEstado" EntitySet="DetalleEstado" />
+    </AssociationSet>
+    <AssociationSet Name="FK__DetalleEs__idEst__6FE99F9F" Association="Self.FK__DetalleEs__idEst__6FE99F9F">
+      <End Role="EstadoEmpleado" EntitySet="EstadoEmpleado" />
+      <End Role="DetalleEstado" EntitySet="DetalleEstado" />
+    </AssociationSet>
+    <AssociationSet Name="FK__DetalleEs__idEst__70DDC3D8" Association="Self.FK__DetalleEs__idEst__70DDC3D8">
+      <End Role="Estado" EntitySet="Estado" />
+      <End Role="DetalleEstadoServicio" EntitySet="DetalleEstadoServicio" />
+    </AssociationSet>
+    <AssociationSet Name="FK__DetalleEs__idOrd__71D1E811" Association="Self.FK__DetalleEs__idOrd__71D1E811">
+      <End Role="OrdenServicio" EntitySet="OrdenServicio" />
+      <End Role="DetalleEstadoServicio" EntitySet="DetalleEstadoServicio" />
+    </AssociationSet>
+    <AssociationSet Name="FK__DetalleEstadoSer__72C60C4A" Association="Self.FK__DetalleEstadoSer__72C60C4A">
+      <End Role="DetalleProgramacion" EntitySet="DetalleProgramacion" />
+      <End Role="DetalleEstadoServicio" EntitySet="DetalleEstadoServicio" />
+    </AssociationSet>
+    <AssociationSet Name="FK__DetallePr__idEmp__73BA3083" Association="Self.FK__DetallePr__idEmp__73BA3083">
+      <End Role="Empleado" EntitySet="Empleado" />
+      <End Role="DetalleProgramacion" EntitySet="DetalleProgramacion" />
+    </AssociationSet>
+    <AssociationSet Name="FK__DetallePr__idEst__74AE54BC" Association="Self.FK__DetallePr__idEst__74AE54BC">
+      <End Role="Estado" EntitySet="Estado" />
+      <End Role="DetalleProgramacion" EntitySet="DetalleProgramacion" />
+    </AssociationSet>
+    <AssociationSet Name="FK__DetallePr__idPro__75A278F5" Association="Self.FK__DetallePr__idPro__75A278F5">
+      <End Role="Programacion" EntitySet="Programacion" />
+      <End Role="DetalleProgramacion" EntitySet="DetalleProgramacion" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Empleado__76969D2E" Association="Self.FK__Empleado__76969D2E">
+      <End Role="CentroCosto" EntitySet="CentroCosto" />
+      <End Role="Empleado" EntitySet="Empleado" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Empleado__id__778AC167" Association="Self.FK__Empleado__id__778AC167">
+      <End Role="Persona" EntitySet="Persona" />
+      <End Role="Empleado" EntitySet="Empleado" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Empleado__idCarg__787EE5A0" Association="Self.FK__Empleado__idCarg__787EE5A0">
+      <End Role="Cargo" EntitySet="Cargo" />
+      <End Role="Empleado" EntitySet="Empleado" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Empleado__idEmpr__797309D9" Association="Self.FK__Empleado__idEmpr__797309D9">
+      <End Role="Empresa" EntitySet="Empresa" />
+      <End Role="Empleado" EntitySet="Empleado" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Empleado__idTurn__7A672E12" Association="Self.FK__Empleado__idTurn__7A672E12">
+      <End Role="Turno" EntitySet="Turno" />
+      <End Role="Empleado" EntitySet="Empleado" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Empleado__idUsua__7B5B524B" Association="Self.FK__Empleado__idUsua__7B5B524B">
+      <End Role="Usuario" EntitySet="Usuario" />
+      <End Role="Empleado" EntitySet="Empleado" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Empresa__idRubro__7C4F7684" Association="Self.FK__Empresa__idRubro__7C4F7684">
+      <End Role="Rubro" EntitySet="Rubro" />
+      <End Role="Empresa" EntitySet="Empresa" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Empresa__idTipo__7D439ABD" Association="Self.FK__Empresa__idTipo__7D439ABD">
+      <End Role="TipoEmpresa" EntitySet="TipoEmpresa" />
+      <End Role="Empresa" EntitySet="Empresa" />
+    </AssociationSet>
+    <AssociationSet Name="FK__GrupoPerf__idGru__7E37BEF6" Association="Self.FK__GrupoPerf__idGru__7E37BEF6">
+      <End Role="Grupo" EntitySet="Grupo" />
+      <End Role="GrupoPerfil" EntitySet="GrupoPerfil" />
+    </AssociationSet>
+    <AssociationSet Name="FK__GrupoPerf__idPer__7F2BE32F" Association="Self.FK__GrupoPerf__idPer__7F2BE32F">
+      <End Role="Perfil" EntitySet="Perfil" />
+      <End Role="GrupoPerfil" EntitySet="GrupoPerfil" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Menu__idAlimento__00200768" Association="Self.FK__Menu__idAlimento__00200768">
+      <End Role="Alimento" EntitySet="Alimento" />
+      <End Role="Menu" EntitySet="Menu" />
+    </AssociationSet>
+    <AssociationSet Name="FK__OrdenServ__idMen__01142BA1" Association="Self.FK__OrdenServ__idMen__01142BA1">
+      <End Role="Menu" EntitySet="Menu" />
+      <End Role="OrdenServicio" EntitySet="OrdenServicio" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Represent__idEmp__02084FDA" Association="Self.FK__Represent__idEmp__02084FDA">
+      <End Role="Empresa" EntitySet="Empresa" />
+      <End Role="RepresentanteLegal" EntitySet="RepresentanteLegal" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Representant__id__02FC7413" Association="Self.FK__Representant__id__02FC7413">
+      <End Role="Persona" EntitySet="Persona" />
+      <End Role="RepresentanteLegal" EntitySet="RepresentanteLegal" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Usuario__idGrupo__37A5467C" Association="Self.FK__Usuario__idGrupo__37A5467C">
+      <End Role="Grupo" EntitySet="Grupo" />
+      <End Role="Usuario" EntitySet="Usuario" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

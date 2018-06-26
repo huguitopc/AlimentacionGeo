@@ -1,0 +1,48 @@
+D:\UPDS\Modalidad de Grado I\Proyecto\MG1.ComedorGeo.Negocio\bin\Debug\MG1.ComedorGeo.Negocio.dll.config
+D:\UPDS\Modalidad de Grado I\Proyecto\MG1.ComedorGeo.Negocio\bin\Debug\MG1.ComedorGeo.Negocio.dll
+D:\UPDS\Modalidad de Grado I\Proyecto\MG1.ComedorGeo.Negocio\bin\Debug\MG1.ComedorGeo.Negocio.pdb
+D:\UPDS\Modalidad de Grado I\Proyecto\MG1.ComedorGeo.Negocio\bin\Debug\EntityFramework.dll
+D:\UPDS\Modalidad de Grado I\Proyecto\MG1.ComedorGeo.Negocio\bin\Debug\MG1.ComedorGeo.Datos.dll
+D:\UPDS\Modalidad de Grado I\Proyecto\MG1.ComedorGeo.Negocio\bin\Debug\MG1.ComedorGeo.Utilitarios.dll
+D:\UPDS\Modalidad de Grado I\Proyecto\MG1.ComedorGeo.Negocio\bin\Debug\MG1.ComedorGeo.Datos.pdb
+D:\UPDS\Modalidad de Grado I\Proyecto\MG1.ComedorGeo.Negocio\bin\Debug\MG1.ComedorGeo.Utilitarios.pdb
+D:\UPDS\Modalidad de Grado I\Proyecto\MG1.ComedorGeo.Negocio\bin\Debug\EntityFramework.xml
+D:\UPDS\Modalidad de Grado I\Proyecto\MG1.ComedorGeo.Negocio\obj\Debug\MG1.ComedorGeo.Negocio.csprojResolveAssemblyReference.cache
+D:\UPDS\Modalidad de Grado I\Proyecto\MG1.ComedorGeo.Negocio\obj\Debug\MG1.ComedorGeo.Negocio.dll
+D:\UPDS\Modalidad de Grado I\Proyecto\MG1.ComedorGeo.Negocio\obj\Debug\MG1.ComedorGeo.Negocio.pdb
+I:\UPDS\Modalidad_de_Grado_I\Proyecto\MG1.ComedorGeo.Negocio\bin\Debug\MG1.ComedorGeo.Negocio.dll.config
+I:\UPDS\Modalidad_de_Grado_I\Proyecto\MG1.ComedorGeo.Negocio\bin\Debug\MG1.ComedorGeo.Negocio.dll
+I:\UPDS\Modalidad_de_Grado_I\Proyecto\MG1.ComedorGeo.Negocio\bin\Debug\MG1.ComedorGeo.Negocio.pdb
+I:\UPDS\Modalidad_de_Grado_I\Proyecto\MG1.ComedorGeo.Negocio\bin\Debug\EntityFramework.dll
+I:\UPDS\Modalidad_de_Grado_I\Proyecto\MG1.ComedorGeo.Negocio\bin\Debug\MG1.ComedorGeo.Datos.dll
+I:\UPDS\Modalidad_de_Grado_I\Proyecto\MG1.ComedorGeo.Negocio\bin\Debug\MG1.ComedorGeo.Utilitarios.dll
+I:\UPDS\Modalidad_de_Grado_I\Proyecto\MG1.ComedorGeo.Negocio\bin\Debug\MG1.ComedorGeo.Datos.pdb
+I:\UPDS\Modalidad_de_Grado_I\Proyecto\MG1.ComedorGeo.Negocio\bin\Debug\MG1.ComedorGeo.Utilitarios.pdb
+I:\UPDS\Modalidad_de_Grado_I\Proyecto\MG1.ComedorGeo.Negocio\bin\Debug\EntityFramework.xml
+I:\UPDS\Modalidad_de_Grado_I\Proyecto\MG1.ComedorGeo.Negocio\obj\Debug\MG1.ComedorGeo.Negocio.csprojResolveAssemblyReference.cache
+I:\UPDS\Modalidad_de_Grado_I\Proyecto\MG1.ComedorGeo.Negocio\obj\Debug\MG1.ComedorGeo.Negocio.dll
+I:\UPDS\Modalidad_de_Grado_I\Proyecto\MG1.ComedorGeo.Negocio\obj\Debug\MG1.ComedorGeo.Negocio.pdb
+D:\UPDS\Modalidad_de_Grado_I\Proyecto\MG1.ComedorGeo.Negocio\bin\Debug\MG1.ComedorGeo.Negocio.dll.config
+D:\UPDS\Modalidad_de_Grado_I\Proyecto\MG1.ComedorGeo.Negocio\bin\Debug\MG1.ComedorGeo.Negocio.dll
+D:\UPDS\Modalidad_de_Grado_I\Proyecto\MG1.ComedorGeo.Negocio\bin\Debug\MG1.ComedorGeo.Negocio.pdb
+D:\UPDS\Modalidad_de_Grado_I\Proyecto\MG1.ComedorGeo.Negocio\bin\Debug\EntityFramework.dll
+D:\UPDS\Modalidad_de_Grado_I\Proyecto\MG1.ComedorGeo.Negocio\bin\Debug\MG1.ComedorGeo.Datos.dll
+D:\UPDS\Modalidad_de_Grado_I\Proyecto\MG1.ComedorGeo.Negocio\bin\Debug\MG1.ComedorGeo.Utilitarios.dll
+D:\UPDS\Modalidad_de_Grado_I\Proyecto\MG1.ComedorGeo.Negocio\bin\Debug\MG1.ComedorGeo.Datos.pdb
+D:\UPDS\Modalidad_de_Grado_I\Proyecto\MG1.ComedorGeo.Negocio\bin\Debug\MG1.ComedorGeo.Utilitarios.pdb
+D:\UPDS\Modalidad_de_Grado_I\Proyecto\MG1.ComedorGeo.Negocio\bin\Debug\EntityFramework.xml
+D:\UPDS\Modalidad_de_Grado_I\Proyecto\MG1.ComedorGeo.Negocio\obj\Debug\MG1.ComedorGeo.Negocio.csprojResolveAssemblyReference.cache
+D:\UPDS\Modalidad_de_Grado_I\Proyecto\MG1.ComedorGeo.Negocio\obj\Debug\MG1.ComedorGeo.Negocio.dll
+D:\UPDS\Modalidad_de_Grado_I\Proyecto\MG1.ComedorGeo.Negocio\obj\Debug\MG1.ComedorGeo.Negocio.pdb
+E:\Proyecto de Grado 2017\AlexPereira\Proyecto\MG1.ComedorGeo.Negocio\obj\Debug\MG1.ComedorGeo.Negocio.csprojResolveAssemblyReference.cache
+E:\Proyecto de Grado 2017\AlexPereira\Proyecto\MG1.ComedorGeo.Negocio\obj\Debug\MG1.ComedorGeo.Negocio.dll
+E:\Proyecto de Grado 2017\AlexPereira\Proyecto\MG1.ComedorGeo.Negocio\obj\Debug\MG1.ComedorGeo.Negocio.pdb
+E:\Proyecto de Grado 2017\AlexPereira\Proyecto\MG1.ComedorGeo.Negocio\bin\Debug\MG1.ComedorGeo.Negocio.dll.config
+E:\Proyecto de Grado 2017\AlexPereira\Proyecto\MG1.ComedorGeo.Negocio\bin\Debug\MG1.ComedorGeo.Negocio.dll
+E:\Proyecto de Grado 2017\AlexPereira\Proyecto\MG1.ComedorGeo.Negocio\bin\Debug\MG1.ComedorGeo.Negocio.pdb
+E:\Proyecto de Grado 2017\AlexPereira\Proyecto\MG1.ComedorGeo.Negocio\bin\Debug\EntityFramework.dll
+E:\Proyecto de Grado 2017\AlexPereira\Proyecto\MG1.ComedorGeo.Negocio\bin\Debug\MG1.ComedorGeo.Datos.dll
+E:\Proyecto de Grado 2017\AlexPereira\Proyecto\MG1.ComedorGeo.Negocio\bin\Debug\MG1.ComedorGeo.Utilitarios.dll
+E:\Proyecto de Grado 2017\AlexPereira\Proyecto\MG1.ComedorGeo.Negocio\bin\Debug\MG1.ComedorGeo.Datos.pdb
+E:\Proyecto de Grado 2017\AlexPereira\Proyecto\MG1.ComedorGeo.Negocio\bin\Debug\MG1.ComedorGeo.Utilitarios.pdb
+E:\Proyecto de Grado 2017\AlexPereira\Proyecto\MG1.ComedorGeo.Negocio\bin\Debug\EntityFramework.xml

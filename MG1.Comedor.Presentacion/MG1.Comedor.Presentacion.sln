@@ -1,0 +1,48 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MG1.Comedor.Presentacion", "MG1.Comedor.Presentacion\MG1.Comedor.Presentacion.csproj", "{48EC9C6A-0914-43A1-9763-D63CC7B34F73}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MG1.ComedorGeo.Datos", "..\MG1.ComedorGeo.Datos\MG1.ComedorGeo.Datos.csproj", "{936E1C90-931F-4FD2-9B8B-5900554C290A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MG1.ComedorGeo.Negocio", "..\MG1.ComedorGeo.Negocio\MG1.ComedorGeo.Negocio.csproj", "{700026EA-CA02-47A6-A254-01EAB12E4CB4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MG1.ComedorGeo.Utilitarios", "..\MG1.ComedorGeo.Utilitarios\MG1.ComedorGeo.Utilitarios.csproj", "{5166DAA5-1E5B-467A-A3A4-971AA8402E57}"
+EndProject
+Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "MG1.ComedorGeo.BaseDatos", "..\MG1.ComedorGeo.BaseDatos\MG1.ComedorGeo.BaseDatos.sqlproj", "{962B6BD8-8D96-4081-AE40-9B02FC7C158B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{48EC9C6A-0914-43A1-9763-D63CC7B34F73}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{48EC9C6A-0914-43A1-9763-D63CC7B34F73}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{48EC9C6A-0914-43A1-9763-D63CC7B34F73}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{48EC9C6A-0914-43A1-9763-D63CC7B34F73}.Release|Any CPU.Build.0 = Release|Any CPU
+		{936E1C90-931F-4FD2-9B8B-5900554C290A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{936E1C90-931F-4FD2-9B8B-5900554C290A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{936E1C90-931F-4FD2-9B8B-5900554C290A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{936E1C90-931F-4FD2-9B8B-5900554C290A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{700026EA-CA02-47A6-A254-01EAB12E4CB4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{700026EA-CA02-47A6-A254-01EAB12E4CB4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{700026EA-CA02-47A6-A254-01EAB12E4CB4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{700026EA-CA02-47A6-A254-01EAB12E4CB4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5166DAA5-1E5B-467A-A3A4-971AA8402E57}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5166DAA5-1E5B-467A-A3A4-971AA8402E57}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5166DAA5-1E5B-467A-A3A4-971AA8402E57}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5166DAA5-1E5B-467A-A3A4-971AA8402E57}.Release|Any CPU.Build.0 = Release|Any CPU
+		{962B6BD8-8D96-4081-AE40-9B02FC7C158B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{962B6BD8-8D96-4081-AE40-9B02FC7C158B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{962B6BD8-8D96-4081-AE40-9B02FC7C158B}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{962B6BD8-8D96-4081-AE40-9B02FC7C158B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{962B6BD8-8D96-4081-AE40-9B02FC7C158B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{962B6BD8-8D96-4081-AE40-9B02FC7C158B}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

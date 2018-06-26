@@ -1,0 +1,404 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="dbAlimentacionGeoModelStoreContainer" CdmEntityContainer="dbAlimentacionGeoEntities">
+    <FunctionImportMapping FunctionImportName="sp_ActualizarNombreCompletoCursor" FunctionName="dbAlimentacionGeoModel.Store.sp_ActualizarNombreCompletoCursor" />
+    <FunctionImportMapping FunctionImportName="sp_ActualizarTBResumenAlimentacion" FunctionName="dbAlimentacionGeoModel.Store.sp_ActualizarTBResumenAlimentacion" />
+    <EntitySetMapping Name="Alimento">
+      <EntityTypeMapping TypeName="dbAlimentacionGeoModel.Alimento">
+        <MappingFragment StoreEntitySet="Alimento">
+          <ScalarProperty Name="itTipoAlimento" ColumnName="itTipoAlimento" />
+          <ScalarProperty Name="itTipo" ColumnName="itTipo" />
+          <ScalarProperty Name="Cantidad" ColumnName="Cantidad" />
+          <ScalarProperty Name="Precio" ColumnName="Precio" />
+          <ScalarProperty Name="NombreAlimento" ColumnName="NombreAlimento" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Area">
+      <EntityTypeMapping TypeName="dbAlimentacionGeoModel.Area">
+        <MappingFragment StoreEntitySet="Area">
+          <ScalarProperty Name="NombreArea" ColumnName="NombreArea" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Bitacora">
+      <EntityTypeMapping TypeName="dbAlimentacionGeoModel.Bitacora">
+        <MappingFragment StoreEntitySet="Bitacora">
+          <ScalarProperty Name="Modificado" ColumnName="Modificado" />
+          <ScalarProperty Name="Aplicacion" ColumnName="Aplicacion" />
+          <ScalarProperty Name="Host" ColumnName="Host" />
+          <ScalarProperty Name="nombreUsuario" ColumnName="nombreUsuario" />
+          <ScalarProperty Name="idUsuario" ColumnName="idUsuario" />
+          <ScalarProperty Name="idTabla" ColumnName="idTabla" />
+          <ScalarProperty Name="Tabla" ColumnName="Tabla" />
+          <ScalarProperty Name="Transaccion" ColumnName="Transaccion" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Cargo">
+      <EntityTypeMapping TypeName="dbAlimentacionGeoModel.Cargo">
+        <MappingFragment StoreEntitySet="Cargo">
+          <ScalarProperty Name="NombreCargo" ColumnName="NombreCargo" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CentroCosto">
+      <EntityTypeMapping TypeName="dbAlimentacionGeoModel.CentroCosto">
+        <MappingFragment StoreEntitySet="CentroCosto">
+          <ScalarProperty Name="idArea" ColumnName="idArea" />
+          <ScalarProperty Name="NombreCentroCosto" ColumnName="NombreCentroCosto" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DetalleAlimento">
+      <EntityTypeMapping TypeName="dbAlimentacionGeoModel.DetalleAlimento">
+        <MappingFragment StoreEntitySet="DetalleAlimento">
+          <ScalarProperty Name="TotalCalorias" ColumnName="TotalCalorias" />
+          <ScalarProperty Name="Porcion" ColumnName="Porcion" />
+          <ScalarProperty Name="idIngrediente" ColumnName="idIngrediente" />
+          <ScalarProperty Name="idAlimento" ColumnName="idAlimento" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DetalleEstado">
+      <EntityTypeMapping TypeName="dbAlimentacionGeoModel.DetalleEstado">
+        <MappingFragment StoreEntitySet="DetalleEstado">
+          <ScalarProperty Name="FechaFin" ColumnName="FechaFin" />
+          <ScalarProperty Name="FechaInicio" ColumnName="FechaInicio" />
+          <ScalarProperty Name="idEstado" ColumnName="idEstado" />
+          <ScalarProperty Name="idEmpleado" ColumnName="idEmpleado" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DetalleEstadoServicio">
+      <EntityTypeMapping TypeName="dbAlimentacionGeoModel.DetalleEstadoServicio">
+        <MappingFragment StoreEntitySet="DetalleEstadoServicio">
+          <ScalarProperty Name="idEstado" ColumnName="idEstado" />
+          <ScalarProperty Name="idOrdenServicio" ColumnName="idOrdenServicio" />
+          <ScalarProperty Name="idProgramacion" ColumnName="idProgramacion" />
+          <ScalarProperty Name="idEmpleado" ColumnName="idEmpleado" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DetalleProgramacion">
+      <EntityTypeMapping TypeName="dbAlimentacionGeoModel.DetalleProgramacion">
+        <MappingFragment StoreEntitySet="DetalleProgramacion">
+          <ScalarProperty Name="idEstado" ColumnName="idEstado" />
+          <ScalarProperty Name="idProgramacion" ColumnName="idProgramacion" />
+          <ScalarProperty Name="idEmpleado" ColumnName="idEmpleado" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Empleado">
+      <EntityTypeMapping TypeName="dbAlimentacionGeoModel.Empleado">
+        <MappingFragment StoreEntitySet="Empleado">
+          <ScalarProperty Name="idUsuario" ColumnName="idUsuario" />
+          <ScalarProperty Name="idTurno" ColumnName="idTurno" />
+          <ScalarProperty Name="FechaIngreso" ColumnName="FechaIngreso" />
+          <ScalarProperty Name="idCentroCosto" ColumnName="idCentroCosto" />
+          <ScalarProperty Name="idArea" ColumnName="idArea" />
+          <ScalarProperty Name="idCargo" ColumnName="idCargo" />
+          <ScalarProperty Name="idEmpresa" ColumnName="idEmpresa" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Empresa">
+      <EntityTypeMapping TypeName="dbAlimentacionGeoModel.Empresa">
+        <MappingFragment StoreEntitySet="Empresa">
+          <ScalarProperty Name="idTipo" ColumnName="idTipo" />
+          <ScalarProperty Name="idRubro" ColumnName="idRubro" />
+          <ScalarProperty Name="Telefono" ColumnName="Telefono" />
+          <ScalarProperty Name="Direccion" ColumnName="Direccion" />
+          <ScalarProperty Name="Nit" ColumnName="Nit" />
+          <ScalarProperty Name="RazonSocial" ColumnName="RazonSocial" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Estado">
+      <EntityTypeMapping TypeName="dbAlimentacionGeoModel.Estado">
+        <MappingFragment StoreEntitySet="Estado">
+          <ScalarProperty Name="NombreEstado" ColumnName="NombreEstado" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="EstadoEmpleado">
+      <EntityTypeMapping TypeName="dbAlimentacionGeoModel.EstadoEmpleado">
+        <MappingFragment StoreEntitySet="EstadoEmpleado">
+          <ScalarProperty Name="DescripcionEstado" ColumnName="DescripcionEstado" />
+          <ScalarProperty Name="NombreEstado" ColumnName="NombreEstado" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Grupo">
+      <EntityTypeMapping TypeName="dbAlimentacionGeoModel.Grupo">
+        <MappingFragment StoreEntitySet="Grupo">
+          <ScalarProperty Name="NombreGrupo" ColumnName="NombreGrupo" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GrupoPerfil">
+      <EntityTypeMapping TypeName="dbAlimentacionGeoModel.GrupoPerfil">
+        <MappingFragment StoreEntitySet="GrupoPerfil">
+          <ScalarProperty Name="Flag" ColumnName="Flag" />
+          <ScalarProperty Name="idPerfil" ColumnName="idPerfil" />
+          <ScalarProperty Name="idGrupo" ColumnName="idGrupo" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Ingrediente">
+      <EntityTypeMapping TypeName="dbAlimentacionGeoModel.Ingrediente">
+        <MappingFragment StoreEntitySet="Ingrediente">
+          <ScalarProperty Name="Calorias" ColumnName="Calorias" />
+          <ScalarProperty Name="NombreIngrediente" ColumnName="NombreIngrediente" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Menu">
+      <EntityTypeMapping TypeName="dbAlimentacionGeoModel.Menu">
+        <MappingFragment StoreEntitySet="Menu">
+          <ScalarProperty Name="idAlimento" ColumnName="idAlimento" />
+          <ScalarProperty Name="FechaMenu" ColumnName="FechaMenu" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="OrdenServicio">
+      <EntityTypeMapping TypeName="dbAlimentacionGeoModel.OrdenServicio">
+        <MappingFragment StoreEntitySet="OrdenServicio">
+          <ScalarProperty Name="idMenu" ColumnName="idMenu" />
+          <ScalarProperty Name="Observacion" ColumnName="Observacion" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Perfil">
+      <EntityTypeMapping TypeName="dbAlimentacionGeoModel.Perfil">
+        <MappingFragment StoreEntitySet="Perfil">
+          <ScalarProperty Name="NombrePerfil" ColumnName="NombrePerfil" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Persona">
+      <EntityTypeMapping TypeName="dbAlimentacionGeoModel.Persona">
+        <MappingFragment StoreEntitySet="Persona">
+          <ScalarProperty Name="NombreCompleto" ColumnName="NombreCompleto" />
+          <ScalarProperty Name="DocumentoIdentidad" ColumnName="DocumentoIdentidad" />
+          <ScalarProperty Name="FechaNacimiento" ColumnName="FechaNacimiento" />
+          <ScalarProperty Name="Sexo" ColumnName="Sexo" />
+          <ScalarProperty Name="ApellidoMaterno" ColumnName="ApellidoMaterno" />
+          <ScalarProperty Name="ApellidoPaterno" ColumnName="ApellidoPaterno" />
+          <ScalarProperty Name="NombrePersona" ColumnName="NombrePersona" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Programacion">
+      <EntityTypeMapping TypeName="dbAlimentacionGeoModel.Programacion">
+        <MappingFragment StoreEntitySet="Programacion">
+          <ScalarProperty Name="FechaFin" ColumnName="FechaFin" />
+          <ScalarProperty Name="FechaInicio" ColumnName="FechaInicio" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="RepresentanteLegal">
+      <EntityTypeMapping TypeName="dbAlimentacionGeoModel.RepresentanteLegal">
+        <MappingFragment StoreEntitySet="RepresentanteLegal">
+          <ScalarProperty Name="idEmpresa" ColumnName="idEmpresa" />
+          <ScalarProperty Name="Poder" ColumnName="Poder" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Rubro">
+      <EntityTypeMapping TypeName="dbAlimentacionGeoModel.Rubro">
+        <MappingFragment StoreEntitySet="Rubro">
+          <ScalarProperty Name="DescripcionRubro" ColumnName="DescripcionRubro" />
+          <ScalarProperty Name="NombreRubro" ColumnName="NombreRubro" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TBResumenAlimentacion">
+      <EntityTypeMapping TypeName="dbAlimentacionGeoModel.TBResumenAlimentacion">
+        <MappingFragment StoreEntitySet="TBResumenAlimentacion">
+          <ScalarProperty Name="TotalPrecio" ColumnName="TotalPrecio" />
+          <ScalarProperty Name="CaloriasPostre" ColumnName="CaloriasPostre" />
+          <ScalarProperty Name="Postre" ColumnName="Postre" />
+          <ScalarProperty Name="CaloriasBebida" ColumnName="CaloriasBebida" />
+          <ScalarProperty Name="Bebida" ColumnName="Bebida" />
+          <ScalarProperty Name="CaloriasPlato" ColumnName="CaloriasPlato" />
+          <ScalarProperty Name="Plato" ColumnName="Plato" />
+          <ScalarProperty Name="TipoMenu" ColumnName="TipoMenu" />
+          <ScalarProperty Name="Area" ColumnName="Area" />
+          <ScalarProperty Name="CentroCosto" ColumnName="CentroCosto" />
+          <ScalarProperty Name="Cargo" ColumnName="Cargo" />
+          <ScalarProperty Name="NombreEmpleado" ColumnName="NombreEmpleado" />
+          <ScalarProperty Name="CodigoEmpleado" ColumnName="CodigoEmpleado" />
+          <ScalarProperty Name="FechaAlimentacion" ColumnName="FechaAlimentacion" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Tipo">
+      <EntityTypeMapping TypeName="dbAlimentacionGeoModel.Tipo">
+        <MappingFragment StoreEntitySet="Tipo">
+          <ScalarProperty Name="NombreTipo" ColumnName="NombreTipo" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TipoAlimento">
+      <EntityTypeMapping TypeName="dbAlimentacionGeoModel.TipoAlimento">
+        <MappingFragment StoreEntitySet="TipoAlimento">
+          <ScalarProperty Name="NombreTipoAlimento" ColumnName="NombreTipoAlimento" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TipoEmpresa">
+      <EntityTypeMapping TypeName="dbAlimentacionGeoModel.TipoEmpresa">
+        <MappingFragment StoreEntitySet="TipoEmpresa">
+          <ScalarProperty Name="NombreTipo" ColumnName="NombreTipo" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Turno">
+      <EntityTypeMapping TypeName="dbAlimentacionGeoModel.Turno">
+        <MappingFragment StoreEntitySet="Turno">
+          <ScalarProperty Name="HorarioSalida" ColumnName="HorarioSalida" />
+          <ScalarProperty Name="HorarioIngreso" ColumnName="HorarioIngreso" />
+          <ScalarProperty Name="NombreTurno" ColumnName="NombreTurno" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Usuario">
+      <EntityTypeMapping TypeName="dbAlimentacionGeoModel.Usuario">
+        <MappingFragment StoreEntitySet="Usuario">
+          <ScalarProperty Name="idGrupo" ColumnName="idGrupo" />
+          <ScalarProperty Name="Contraseña" ColumnName="Contraseña" />
+          <ScalarProperty Name="NombreUsuario" ColumnName="NombreUsuario" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="VCentroCosto">
+      <EntityTypeMapping TypeName="dbAlimentacionGeoModel.VCentroCosto">
+        <MappingFragment StoreEntitySet="VCentroCosto">
+          <ScalarProperty Name="NombreArea" ColumnName="NombreArea" />
+          <ScalarProperty Name="idArea" ColumnName="idArea" />
+          <ScalarProperty Name="NombreCentroCosto" ColumnName="NombreCentroCosto" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="VDetalleEstadoServicio">
+      <EntityTypeMapping TypeName="dbAlimentacionGeoModel.VDetalleEstadoServicio">
+        <MappingFragment StoreEntitySet="VDetalleEstadoServicio">
+          <ScalarProperty Name="NombreEstado" ColumnName="NombreEstado" />
+          <ScalarProperty Name="idEstado" ColumnName="idEstado" />
+          <ScalarProperty Name="Observacion" ColumnName="Observacion" />
+          <ScalarProperty Name="NombreAlimento" ColumnName="NombreAlimento" />
+          <ScalarProperty Name="idAlimento" ColumnName="idAlimento" />
+          <ScalarProperty Name="FechaMenu" ColumnName="FechaMenu" />
+          <ScalarProperty Name="idMenu" ColumnName="idMenu" />
+          <ScalarProperty Name="idOrdenServicio" ColumnName="idOrdenServicio" />
+          <ScalarProperty Name="FechaFin" ColumnName="FechaFin" />
+          <ScalarProperty Name="FechaInicio" ColumnName="FechaInicio" />
+          <ScalarProperty Name="idProgramacion" ColumnName="idProgramacion" />
+          <ScalarProperty Name="NombreCompleto" ColumnName="NombreCompleto" />
+          <ScalarProperty Name="idEmpleado" ColumnName="idEmpleado" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="VDetalleProgramacion">
+      <EntityTypeMapping TypeName="dbAlimentacionGeoModel.VDetalleProgramacion">
+        <MappingFragment StoreEntitySet="VDetalleProgramacion">
+          <ScalarProperty Name="NombreEstado" ColumnName="NombreEstado" />
+          <ScalarProperty Name="idEstado" ColumnName="idEstado" />
+          <ScalarProperty Name="FechaFin" ColumnName="FechaFin" />
+          <ScalarProperty Name="FechaInicio" ColumnName="FechaInicio" />
+          <ScalarProperty Name="idProgramacion" ColumnName="idProgramacion" />
+          <ScalarProperty Name="NombreArea" ColumnName="NombreArea" />
+          <ScalarProperty Name="NombreCompleto" ColumnName="NombreCompleto" />
+          <ScalarProperty Name="idEmpleado" ColumnName="idEmpleado" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="VEmpleado">
+      <EntityTypeMapping TypeName="dbAlimentacionGeoModel.VEmpleado">
+        <MappingFragment StoreEntitySet="VEmpleado">
+          <ScalarProperty Name="NombreUsuario" ColumnName="NombreUsuario" />
+          <ScalarProperty Name="idUsuario" ColumnName="idUsuario" />
+          <ScalarProperty Name="NombreTurno" ColumnName="NombreTurno" />
+          <ScalarProperty Name="idTurno" ColumnName="idTurno" />
+          <ScalarProperty Name="NombreCentroCosto" ColumnName="NombreCentroCosto" />
+          <ScalarProperty Name="idCentroCosto" ColumnName="idCentroCosto" />
+          <ScalarProperty Name="NombreArea" ColumnName="NombreArea" />
+          <ScalarProperty Name="idArea" ColumnName="idArea" />
+          <ScalarProperty Name="NombreCargo" ColumnName="NombreCargo" />
+          <ScalarProperty Name="idCargo" ColumnName="idCargo" />
+          <ScalarProperty Name="FechaIngreso" ColumnName="FechaIngreso" />
+          <ScalarProperty Name="RazonSocial" ColumnName="RazonSocial" />
+          <ScalarProperty Name="idEmpresa" ColumnName="idEmpresa" />
+          <ScalarProperty Name="NombreCompleto" ColumnName="NombreCompleto" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="VEmpleadoProgramacion">
+      <EntityTypeMapping TypeName="dbAlimentacionGeoModel.VEmpleadoProgramacion">
+        <MappingFragment StoreEntitySet="VEmpleadoProgramacion">
+          <ScalarProperty Name="NombreCompleto" ColumnName="NombreCompleto" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="VGrupoPerfil">
+      <EntityTypeMapping TypeName="dbAlimentacionGeoModel.VGrupoPerfil">
+        <MappingFragment StoreEntitySet="VGrupoPerfil">
+          <ScalarProperty Name="NombrePerfil" ColumnName="NombrePerfil" />
+          <ScalarProperty Name="idPerfil" ColumnName="idPerfil" />
+          <ScalarProperty Name="NombreGrupo" ColumnName="NombreGrupo" />
+          <ScalarProperty Name="idGrupo" ColumnName="idGrupo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="VPerfil">
+      <EntityTypeMapping TypeName="dbAlimentacionGeoModel.VPerfil">
+        <MappingFragment StoreEntitySet="VPerfil">
+          <ScalarProperty Name="NombrePerfil" ColumnName="NombrePerfil" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="sp_InsertarPerfilCursor" FunctionName="dbAlimentacionGeoModel.Store.sp_InsertarPerfilCursor" />
+    <EntitySetMapping Name="VAlimentoProgramacion">
+      <EntityTypeMapping TypeName="dbAlimentacionGeoModel.VAlimentoProgramacion">
+        <MappingFragment StoreEntitySet="VAlimentoProgramacion">
+          <ScalarProperty Name="Precio" ColumnName="Precio" />
+          <ScalarProperty Name="Cantidad" ColumnName="Cantidad" />
+          <ScalarProperty Name="FechaMenu" ColumnName="FechaMenu" />
+          <ScalarProperty Name="NombreAlimento" ColumnName="NombreAlimento" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
